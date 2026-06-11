@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数据分析 - 天气数据平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-cloud-sun"></i><span>天气数据平台</span></div>
+        <div class="nav-menu"><a href="/"><i class="fas fa-home"></i> 首页</a><a href="/data"><i class="fas fa-database"></i> 数据管理</a><a href="/analysis" class="active"><i class="fas fa-chart-line"></i> 数据分析</a><a href="/realtime"><i class="fas fa-satellite-dish"></i> 实时监控</a></div>
+        <div class="nav-user"><span class="role-badge">{{ role }}</span><span class="username">{{ username }}</span><a href="/logout" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a></div>
+    </nav>
+    <div class="container">
+        <div class="page-header"><h2><i class="fas fa-chart-line"></i> 数据分析中心</h2></div>
+        <div class="analysis-controls">
+            <div class="control-group"><label>分析城市</label><select id="citySelect" onchange="updateAllCharts()"><option value="北京">北京</option><option value="上海">上海</option><option value="广州">广州</option><option value="深圳">深圳</option></select></div>
+            <div class="control-group"><label>时间粒度</label><select id="periodSelect" onchange="updateAllCharts()"><option value="month">按月</option><option value="week">按周</option><option value="day">按天</option></select></div>
+            <div class="control-group"><label>对比指标</label><select id="metricSelect" onchange="updateAllCharts()"><option value="aqi">AQI指数</option><option value="temp">温度</option><option value="pollutant">污染物</option></select></div>
+            <div class="control-group"><label>操作</label><div class="btn-group"><button onclick="generateCharts()" class="btn btn-primary"><i class="fas fa-sync"></i> 生成静态图表</button><button onclick="clearCharts()" class="btn btn-danger"><i class="fas fa-eraser"></i> 清空</button></div></div>
+        </div>
+        <div class="charts-grid">
+            <div class="chart-card large"><div class="chart-header"><h4><i class="fas fa-chart-area"></i> 趋势分析</h4><button onclick="downloadChart('trendChart')" class="btn-icon"><i class="fas fa-download"></i></button></div><div id="trendChart" style="height:350px;"></div></div>
+            <div class="chart-card"><div class="chart-header"><h4><i class="fas fa-chart-bar"></i> 城市对比</h4></div><div id="compareChart" style="height:350px;"></div></div>
+            <div class="chart-card"><div class="chart-header"><h4><i class="fas fa-project-diagram"></i> 相关性分析</h4></div><div id="correlationChart" style="height:350px;"></div></div>
+            <div class="chart-card large"><div class="chart-header"><h4><i class="fas fa-chart-pie"></i> 质量等级分布</h4></div><div id="distributionChart" style="height:300px;"></div></div>
+        </div>
+        <div class="static-gallery" id="staticGallery"><h3><i class="fas fa-images"></i> 静态分析图表</h3><div class="gallery-grid" id="galleryGrid">{% if charts %}{% for chart in charts %}<div class="gallery-item"><img src="/static/charts/{{ chart }}" alt="{{ chart }}" loading="lazy"><div class="gallery-caption">{{ chart.replace('.png','').replace('_',' ') }}</div></div>{% endfor %}{% else %}<div class="empty-state"><i class="fas fa-image"></i><p>暂无静态图表，点击上方「生成静态图表」按钮</p></div>{% endif %}</div></div>
+    </div>
+    <script>
+        // 辅助函数：安全转换为数字
+        function toNumber(val) {
+            if (val === undefined || val === null) return 0;
+            const num = parseFloat(val);
+            return isNaN(num) ? 0 : num;
+        }
+
+        let trendChart, compareChart, correlationChart, distributionChart;
+        function initCharts() {
+            trendChart = echarts.init(document.getElementById('trendChart'));
+            compareChart = echarts.init(document.getElementById('compareChart'));
+            correlationChart = echarts.init(document.getElementById('correlationChart'));
+            distributionChart = echarts.init(document.getElementById('distributionChart'));
+            window.addEventListener('resize', () => {
+                trendChart?.resize();
+                compareChart?.resize();
+                correlationChart?.resize();
+                distributionChart?.resize();
+            });
+        }
+
+        async function updateAllCharts() {
+            const city = document.getElementById('citySelect').value;
+            const period = document.getElementById('periodSelect').value;
+            const metric = document.getElementById('metricSelect').value;
+            await Promise.all([
+                loadTrendChart(city, period, metric),
+                loadCompareChart(metric),
+                loadCorrelationChart(city),
+                loadDistributionChart(city)
+            ]);
+        }
+
+        async function loadTrendChart(city, period, metric) {
+            try {
+                const res = await fetch(`/api/charts/trend?city=${city}&metric=${metric}&period=${period}`);
+                const data = await res.json();
+                if (!data.success) return;
+                const xData = data.data.map(d => d.period);
+                let series = [];
+                if (metric === 'temp') {
+                    series = [
+                        { name: '最高温', type: 'line', data: data.data.map(d => toNumber(d.max_temp)), smooth: true, itemStyle: { color: '#ff6b6b' } },
+                        { name: '最低温', type: 'line', data: data.data.map(d => toNumber(d.min_temp)), smooth: true, itemStyle: { color: '#4ecdc4' } }
+                    ];
+                } else {
+                    series = [{
+                        name: metric === 'aqi' ? 'AQI指数' : '浓度',
+                        type: 'line',
+                        data: data.data.map(d => toNumber(d.value)),
+                        smooth: true,
+                        itemStyle: { color: '#667eea' },
+                        areaStyle: { color: 'rgba(102,126,234,0.2)' }
+                    }];
+                }
+                trendChart.setOption({
+                    tooltip: { trigger: 'axis' },
+                    legend: { data: series.map(s => s.name) },
+                    xAxis: { type: 'category', data: xData, axisLabel: { rotate: 45 } },
+                    yAxis: { type: 'value' },
+                    series: series,
+                    dataZoom: [{ type: 'inside' }, { type: 'slider' }]
+                }, true);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        async function loadCompareChart(metric) {
+            try {
+                const cities = ['北京', '上海', '广州', '深圳'];
+                const res = await fetch(`/api/statistics/city_comparison?cities=${cities.join(',')}&metric=${metric}`);
+                const data = await res.json();
+                if (!data.success) return;
+                const cityData = data.data;
+                const xData = cityData.map(d => d.city_name);
+                let series = [];
+                if (metric === 'aqi') {
+                    series = [
+                        { name: '平均AQI', type: 'bar', data: cityData.map(d => toNumber(d.avg_aqi).toFixed(1)), itemStyle: { color: '#667eea' } },
+                        { name: '最高AQI', type: 'bar', data: cityData.map(d => toNumber(d.max_aqi).toFixed(1)), itemStyle: { color: '#ff6b6b' } }
+                    ];
+                } else if (metric === 'temp') {
+                    series = [
+                        { name: '平均最高温', type: 'bar', data: cityData.map(d => toNumber(d.avg_max).toFixed(1)), itemStyle: { color: '#ff6b6b' } },
+                        { name: '平均最低温', type: 'bar', data: cityData.map(d => toNumber(d.avg_min).toFixed(1)), itemStyle: { color: '#4ecdc4' } }
+                    ];
+                } else {
+                    series = [
+                        { name: 'PM2.5', type: 'bar', data: cityData.map(d => toNumber(d.avg_pm25).toFixed(1)), itemStyle: { color: '#ff6b6b' } },
+                        { name: 'PM10', type: 'bar', data: cityData.map(d => toNumber(d.avg_pm10).toFixed(1)), itemStyle: { color: '#ffd93d' } },
+                        { name: 'SO₂', type: 'bar', data: cityData.map(d => toNumber(d.avg_so2).toFixed(1)), itemStyle: { color: '#6bcb77' } },
+                        { name: 'NO₂', type: 'bar', data: cityData.map(d => toNumber(d.avg_no2).toFixed(1)), itemStyle: { color: '#4d96ff' } }
+                    ];
+                }
+                compareChart.setOption({
+                    tooltip: { trigger: 'axis' },
+                    legend: { data: series.map(s => s.name) },
+                    xAxis: { type: 'category', data: xData },
+                    yAxis: { type: 'value' },
+                    series: series
+                }, true);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        async function loadCorrelationChart(city) {
+            try {
+                const res = await fetch(`/api/charts/correlation?city=${city}`);
+                const data = await res.json();
+                if (!data.success) return;
+                const scatterData = data.data.map(d => [toNumber(d.max_temperature), toNumber(d.PM25)]);
+                correlationChart.setOption({
+                    tooltip: { formatter: params => `温度: ${params.data[0]}°C<br>PM2.5: ${params.data[1]}` },
+                    xAxis: { type: 'value', name: '最高温度(°C)', scale: true },
+                    yAxis: { type: 'value', name: 'PM2.5', scale: true },
+                    series: [{ type: 'scatter', data: scatterData, symbolSize: 8, itemStyle: { color: '#667eea' } }]
+                }, true);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        async function loadDistributionChart(city) {
+            try {
+                const res = await fetch(`/api/aqi_data?city=${city}&per_page=1000`);
+                const data = await res.json();
+                if (!data.success) return;
+                const grades = {};
+                data.data.forEach(d => {
+                    grades[d.aqi_quality_grade] = (grades[d.aqi_quality_grade] || 0) + 1;
+                });
+                const colors = { '优': '#00e400', '良': '#ffff00', '轻度污染': '#ff7e00', '中度污染': '#ff0000', '重度污染': '#99004c', '严重污染': '#7e0023' };
+                distributionChart.setOption({
+                    tooltip: { trigger: 'item', formatter: '{b}: {c}天 ({d}%)' },
+                    series: [{
+                        type: 'pie', radius: ['30%', '60%'], center: ['50%', '50%'], roseType: 'area',
+                        itemStyle: { borderRadius: 8 }, label: { show: true, formatter: '{b}\n{c}天' },
+                        data: Object.entries(grades).map(([name, value]) => ({ name, value, itemStyle: { color: colors[name] || '#999' } }))
+                    }]
+                }, true);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function generateCharts() {
+            if (!confirm('📊 正在生成静态图表，请稍候...')) return;
+            fetch('/api/analyze')
+                .then(r => r.json())
+                .then(d => {
+                    if (d.success) {
+                        alert('✅ 图表生成完成！');
+                        location.reload();
+                    } else {
+                        alert('❌ 生成失败：' + (d.error || '未知错误'));
+                    }
+                })
+                .catch(err => {
+                    alert('❌ 网络错误，请检查后端是否正常运行');
+                    console.error(err);
+                });
+        }
+
+        function clearCharts() {
+            if (!confirm('确定清空所有静态图表吗？')) return;
+            fetch('/api/clear_all_charts', { method: 'POST' })
+                .then(r => r.json())
+                .then(d => {
+                    document.getElementById('galleryGrid').innerHTML = '<div class="empty-state"><i class="fas fa-image"></i><p>暂无静态图表</p></div>';
+                });
+        }
+
+        function downloadChart(chartId) {
+            const chart = echarts.getInstanceByDom(document.getElementById(chartId));
+            if (chart) {
+                const url = chart.getDataURL({ type: 'png', pixelRatio: 2 });
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${chartId}_${Date.now()}.png`;
+                a.click();
+            }
+        }
+
+        initCharts();
+        updateAllCharts();
+    </script>
+</body>
+</html>

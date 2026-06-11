@@ -1,0 +1,1789 @@
+2026-05-14 16:04:10,176 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-14 16:04:10,176 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-14 16:04:10,178 - INFO -  * Restarting with stat
+2026-05-14 16:04:11,549 - WARNING -  * Debugger is active!
+2026-05-14 16:04:11,557 - INFO -  * Debugger PIN: 179-538-115
+2026-05-14 16:04:22,478 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-14 16:04:22,478 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-14 16:04:22,480 - INFO -  * Restarting with stat
+2026-05-14 16:04:23,579 - WARNING -  * Debugger is active!
+2026-05-14 16:04:23,585 - INFO -  * Debugger PIN: 179-538-115
+2026-05-14 16:04:25,489 - INFO - 127.0.0.1 - - [14/May/2026 16:04:25] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-14 16:04:25,515 - INFO - 127.0.0.1 - - [14/May/2026 16:04:25] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-14 16:04:25,696 - INFO - 127.0.0.1 - - [14/May/2026 16:04:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:04:28,484 - INFO - 127.0.0.1 - - [14/May/2026 16:04:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-14 16:04:28,490 - INFO - 127.0.0.1 - - [14/May/2026 16:04:28] "GET / HTTP/1.1" 200 -
+2026-05-14 16:04:28,516 - INFO - 127.0.0.1 - - [14/May/2026 16:04:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:04:30,543 - INFO - 127.0.0.1 - - [14/May/2026 16:04:30] "GET /data HTTP/1.1" 200 -
+2026-05-14 16:04:30,565 - INFO - 127.0.0.1 - - [14/May/2026 16:04:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:04:34,689 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /analysis HTTP/1.1" 200 -
+2026-05-14 16:04:34,713 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:04:34,716 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/air_quality_category.png HTTP/1.1" 200 -
+2026-05-14 16:04:34,716 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/city_aqi_distribution.png HTTP/1.1" 200 -
+2026-05-14 16:04:34,724 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/correlation_heatmap.png HTTP/1.1" 200 -
+2026-05-14 16:04:34,725 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/monthly_aqi_trend.png HTTP/1.1" 200 -
+2026-05-14 16:04:34,725 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/pollutant_comparison.png HTTP/1.1" 200 -
+2026-05-14 16:04:34,726 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/monthly_temperature_trend.png HTTP/1.1" 200 -
+2026-05-14 16:04:34,730 - INFO - 127.0.0.1 - - [14/May/2026 16:04:34] "GET /static/charts/temperature_pm25_correlation.png HTTP/1.1" 200 -
+2026-05-14 16:04:40,356 - INFO - 127.0.0.1 - - [14/May/2026 16:04:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-14 16:04:40,363 - INFO - 127.0.0.1 - - [14/May/2026 16:04:40] "GET /login HTTP/1.1" 200 -
+2026-05-14 16:04:40,387 - INFO - 127.0.0.1 - - [14/May/2026 16:04:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:05:14,265 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-14 16:05:14,265 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-14 16:05:14,268 - INFO -  * Restarting with stat
+2026-05-14 16:05:15,601 - WARNING -  * Debugger is active!
+2026-05-14 16:05:15,608 - INFO -  * Debugger PIN: 179-538-115
+2026-05-14 16:05:16,987 - INFO - 127.0.0.1 - - [14/May/2026 16:05:16] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-14 16:05:17,008 - INFO - 127.0.0.1 - - [14/May/2026 16:05:17] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-14 16:05:17,104 - INFO - 127.0.0.1 - - [14/May/2026 16:05:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:05:17,122 - INFO - 127.0.0.1 - - [14/May/2026 16:05:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-14 16:05:19,618 - INFO - 127.0.0.1 - - [14/May/2026 16:05:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-14 16:05:19,623 - INFO - 127.0.0.1 - - [14/May/2026 16:05:19] "GET / HTTP/1.1" 200 -
+2026-05-14 16:05:19,645 - INFO - 127.0.0.1 - - [14/May/2026 16:05:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:05:22,724 - INFO - 127.0.0.1 - - [14/May/2026 16:05:22] "GET /data HTTP/1.1" 200 -
+2026-05-14 16:05:22,744 - INFO - 127.0.0.1 - - [14/May/2026 16:05:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,198 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "GET /analysis HTTP/1.1" 200 -
+2026-05-14 16:05:25,219 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,221 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,222 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,235 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/monthly_temperature_trend.png HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,235 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/pollutant_comparison.png HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,236 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,236 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/temperature_pm25_correlation.png HTTP/1.1[0m" 304 -
+2026-05-14 16:05:25,236 - INFO - 127.0.0.1 - - [14/May/2026 16:05:25] "[36mGET /static/charts/monthly_aqi_trend.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:36,737 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-14 19:36:36,737 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-14 19:36:36,739 - INFO -  * Restarting with stat
+2026-05-14 19:36:37,966 - WARNING -  * Debugger is active!
+2026-05-14 19:36:37,973 - INFO -  * Debugger PIN: 179-538-115
+2026-05-14 19:36:38,503 - INFO - 127.0.0.1 - - [14/May/2026 19:36:38] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-14 19:36:38,536 - INFO - 127.0.0.1 - - [14/May/2026 19:36:38] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-14 19:36:38,645 - INFO - 127.0.0.1 - - [14/May/2026 19:36:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 19:36:38,666 - INFO - 127.0.0.1 - - [14/May/2026 19:36:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-14 19:36:41,059 - INFO - 127.0.0.1 - - [14/May/2026 19:36:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-14 19:36:41,065 - INFO - 127.0.0.1 - - [14/May/2026 19:36:41] "GET / HTTP/1.1" 200 -
+2026-05-14 19:36:41,092 - INFO - 127.0.0.1 - - [14/May/2026 19:36:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 19:36:43,726 - INFO - 127.0.0.1 - - [14/May/2026 19:36:43] "GET /data HTTP/1.1" 200 -
+2026-05-14 19:36:43,749 - INFO - 127.0.0.1 - - [14/May/2026 19:36:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,810 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "GET /analysis HTTP/1.1" 200 -
+2026-05-14 19:36:46,832 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,836 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,837 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,846 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/monthly_aqi_trend.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,847 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,847 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/monthly_temperature_trend.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,847 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/pollutant_comparison.png HTTP/1.1[0m" 304 -
+2026-05-14 19:36:46,849 - INFO - 127.0.0.1 - - [14/May/2026 19:36:46] "[36mGET /static/charts/temperature_pm25_correlation.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:32,524 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-15 11:56:32,525 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 11:56:32,526 - INFO -  * Restarting with stat
+2026-05-15 11:56:33,578 - WARNING -  * Debugger is active!
+2026-05-15 11:56:33,585 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 11:56:34,403 - INFO - 127.0.0.1 - - [15/May/2026 11:56:34] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-15 11:56:34,413 - INFO - 127.0.0.1 - - [15/May/2026 11:56:34] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-15 11:56:34,484 - INFO - 127.0.0.1 - - [15/May/2026 11:56:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 11:56:34,504 - INFO - 127.0.0.1 - - [15/May/2026 11:56:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-15 11:56:38,863 - INFO - 127.0.0.1 - - [15/May/2026 11:56:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-15 11:56:38,869 - INFO - 127.0.0.1 - - [15/May/2026 11:56:38] "GET / HTTP/1.1" 200 -
+2026-05-15 11:56:38,892 - INFO - 127.0.0.1 - - [15/May/2026 11:56:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 11:56:41,802 - INFO - 127.0.0.1 - - [15/May/2026 11:56:41] "GET /data HTTP/1.1" 200 -
+2026-05-15 11:56:41,822 - INFO - 127.0.0.1 - - [15/May/2026 11:56:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,153 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "GET /analysis HTTP/1.1" 200 -
+2026-05-15 11:56:44,174 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,177 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,177 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,188 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,189 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/monthly_aqi_trend.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,189 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/monthly_temperature_trend.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,190 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/pollutant_comparison.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:44,192 - INFO - 127.0.0.1 - - [15/May/2026 11:56:44] "[36mGET /static/charts/temperature_pm25_correlation.png HTTP/1.1[0m" 304 -
+2026-05-15 11:56:51,073 - INFO - 127.0.0.1 - - [15/May/2026 11:56:51] "GET / HTTP/1.1" 200 -
+2026-05-15 11:56:51,097 - INFO - 127.0.0.1 - - [15/May/2026 11:56:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 11:56:53,119 - INFO - 127.0.0.1 - - [15/May/2026 11:56:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-15 11:56:53,124 - INFO - 127.0.0.1 - - [15/May/2026 11:56:53] "GET /login HTTP/1.1" 200 -
+2026-05-15 11:56:53,145 - INFO - 127.0.0.1 - - [15/May/2026 11:56:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:14:46,969 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-15 13:14:46,969 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:14:46,973 - INFO -  * Restarting with stat
+2026-05-15 13:14:50,969 - WARNING -  * Debugger is active!
+2026-05-15 13:14:50,978 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:14:50,991 - INFO - 127.0.0.1 - - [15/May/2026 13:14:50] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-15 13:14:50,998 - INFO - 127.0.0.1 - - [15/May/2026 13:14:50] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-15 13:14:51,068 - INFO - 127.0.0.1 - - [15/May/2026 13:14:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:15:03,114 - INFO - 127.0.0.1 - - [15/May/2026 13:15:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-15 13:15:03,119 - INFO - 127.0.0.1 - - [15/May/2026 13:15:03] "GET / HTTP/1.1" 200 -
+2026-05-15 13:15:03,142 - INFO - 127.0.0.1 - - [15/May/2026 13:15:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:15:07,093 - INFO - 127.0.0.1 - - [15/May/2026 13:15:07] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:15:07,113 - INFO - 127.0.0.1 - - [15/May/2026 13:15:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:15:48,001 - INFO - ✓ 已清空数据表
+2026-05-15 13:15:48,002 - INFO - 127.0.0.1 - - [15/May/2026 13:15:48] "GET /api/clear_db HTTP/1.1" 200 -
+2026-05-15 13:15:49,301 - INFO - 127.0.0.1 - - [15/May/2026 13:15:49] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:15:49,321 - INFO - 127.0.0.1 - - [15/May/2026 13:15:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:18:32,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-15 13:18:32,338 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:18:32,340 - INFO -  * Restarting with stat
+2026-05-15 13:18:33,372 - WARNING -  * Debugger is active!
+2026-05-15 13:18:33,379 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:18:33,615 - INFO - 127.0.0.1 - - [15/May/2026 13:18:33] "GET / HTTP/1.1" 200 -
+2026-05-15 13:18:33,710 - INFO - 127.0.0.1 - - [15/May/2026 13:18:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:18:35,962 - INFO - 127.0.0.1 - - [15/May/2026 13:18:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-15 13:18:35,968 - INFO - 127.0.0.1 - - [15/May/2026 13:18:35] "GET /login HTTP/1.1" 200 -
+2026-05-15 13:18:35,990 - INFO - 127.0.0.1 - - [15/May/2026 13:18:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:18:44,822 - INFO - 127.0.0.1 - - [15/May/2026 13:18:44] "POST /login HTTP/1.1" 200 -
+2026-05-15 13:18:44,840 - INFO - 127.0.0.1 - - [15/May/2026 13:18:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:18:46,802 - INFO - 127.0.0.1 - - [15/May/2026 13:18:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-15 13:18:46,807 - INFO - 127.0.0.1 - - [15/May/2026 13:18:46] "GET / HTTP/1.1" 200 -
+2026-05-15 13:18:46,826 - INFO - 127.0.0.1 - - [15/May/2026 13:18:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:18:48,000 - INFO - 127.0.0.1 - - [15/May/2026 13:18:48] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:18:48,023 - INFO - 127.0.0.1 - - [15/May/2026 13:18:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:19:06,568 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:19:06,644 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:19:06,754 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:19:06,847 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:19:20,376 - INFO - 127.0.0.1 - - [15/May/2026 13:19:20] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:19:20,395 - INFO - 127.0.0.1 - - [15/May/2026 13:19:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:19:21,309 - INFO - 127.0.0.1 - - [15/May/2026 13:19:21] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:19:21,328 - INFO - 127.0.0.1 - - [15/May/2026 13:19:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:19:22,088 - INFO - 127.0.0.1 - - [15/May/2026 13:19:22] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:19:22,104 - INFO - 127.0.0.1 - - [15/May/2026 13:19:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:19:26,584 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:19:26,661 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:19:26,770 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:19:26,863 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:19:51,590 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:19:51,590 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '01']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:19:51,669 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:19:51,669 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '01']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:19:51,778 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:19:51,778 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '02']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:19:51,869 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:19:51,869 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '02']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:20:06,602 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-05-15 13:20:06,680 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-05-15 13:20:06,792 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-05-15 13:20:06,882 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-05-15 13:20:10,782 - INFO - 127.0.0.1 - - [15/May/2026 13:20:10] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:20:10,799 - INFO - 127.0.0.1 - - [15/May/2026 13:20:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:20:11,308 - INFO - 127.0.0.1 - - [15/May/2026 13:20:11] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:20:11,325 - INFO - 127.0.0.1 - - [15/May/2026 13:20:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:20:11,632 - INFO - 127.0.0.1 - - [15/May/2026 13:20:11] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:20:11,649 - INFO - 127.0.0.1 - - [15/May/2026 13:20:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:20:26,609 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-05-15 13:20:26,686 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-05-15 13:20:26,795 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-05-15 13:20:26,886 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-05-15 13:20:29,921 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:20:30,014 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:20:30,124 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:20:30,218 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:20:40,942 - INFO - 127.0.0.1 - - [15/May/2026 13:20:40] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:20:40,960 - INFO - 127.0.0.1 - - [15/May/2026 13:20:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:20:41,480 - INFO - 127.0.0.1 - - [15/May/2026 13:20:41] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:20:41,496 - INFO - 127.0.0.1 - - [15/May/2026 13:20:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:20:49,937 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:20:50,030 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:20:50,138 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:20:50,231 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:20:51,613 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-05-15 13:20:51,614 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '03']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:20:51,691 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-05-15 13:20:51,692 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '03']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:20:51,802 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-05-15 13:20:51,802 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '04']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:20:51,893 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-05-15 13:20:51,894 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '04']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:21:01,997 - INFO -  * Detected change in 'C:\\Users\\ZhuanZ（无密码）\\Desktop\\新毕业论文\\weather-project\\app.py', reloading
+2026-05-15 13:21:06,625 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202005.html
+2026-05-15 13:21:06,701 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202005.html
+2026-05-15 13:21:06,809 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202006.html
+2026-05-15 13:21:06,902 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202006.html
+2026-05-15 13:21:11,154 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-15 13:21:11,154 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:21:11,156 - INFO -  * Restarting with stat
+2026-05-15 13:21:12,174 - WARNING -  * Debugger is active!
+2026-05-15 13:21:12,181 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:21:14,264 - INFO - 127.0.0.1 - - [15/May/2026 13:21:14] "GET / HTTP/1.1" 200 -
+2026-05-15 13:21:14,332 - INFO - 127.0.0.1 - - [15/May/2026 13:21:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:21:16,534 - INFO - 127.0.0.1 - - [15/May/2026 13:21:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-15 13:21:16,541 - INFO - 127.0.0.1 - - [15/May/2026 13:21:16] "GET /login HTTP/1.1" 200 -
+2026-05-15 13:21:16,563 - INFO - 127.0.0.1 - - [15/May/2026 13:21:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:21:17,515 - INFO - 127.0.0.1 - - [15/May/2026 13:21:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-15 13:21:17,519 - INFO - 127.0.0.1 - - [15/May/2026 13:21:17] "GET / HTTP/1.1" 200 -
+2026-05-15 13:21:17,540 - INFO - 127.0.0.1 - - [15/May/2026 13:21:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:21:18,527 - INFO - 127.0.0.1 - - [15/May/2026 13:21:18] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:21:18,547 - INFO - 127.0.0.1 - - [15/May/2026 13:21:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:21:20,265 - INFO - 127.0.0.1 - - [15/May/2026 13:21:20] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:21:20,282 - INFO - 127.0.0.1 - - [15/May/2026 13:21:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:21:37,664 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:21:37,758 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:21:37,868 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:21:37,961 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:21:57,675 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:21:57,769 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:21:57,880 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:21:57,973 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:22:11,199 - INFO - 127.0.0.1 - - [15/May/2026 13:22:11] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:22:11,216 - INFO - 127.0.0.1 - - [15/May/2026 13:22:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:22:22,692 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:22:22,692 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '01']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:22:22,785 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:22:22,785 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '01']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:22:22,893 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:22:22,894 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '02']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:22:22,987 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:22:22,988 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '02']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:22:37,694 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-05-15 13:22:37,786 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-05-15 13:22:37,909 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-05-15 13:22:38,001 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-05-15 13:23:12,909 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-15 13:23:12,909 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:23:12,911 - INFO -  * Restarting with stat
+2026-05-15 13:23:14,060 - WARNING -  * Debugger is active!
+2026-05-15 13:23:14,068 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:23:15,779 - INFO - 127.0.0.1 - - [15/May/2026 13:23:15] "GET / HTTP/1.1" 200 -
+2026-05-15 13:23:15,960 - INFO - 127.0.0.1 - - [15/May/2026 13:23:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:23:17,708 - INFO - 127.0.0.1 - - [15/May/2026 13:23:17] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:23:17,728 - INFO - 127.0.0.1 - - [15/May/2026 13:23:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:23:22,161 - INFO - ✓ 已清空数据表
+2026-05-15 13:23:22,162 - INFO - 127.0.0.1 - - [15/May/2026 13:23:22] "GET /api/clear_db HTTP/1.1" 200 -
+2026-05-15 13:23:22,928 - INFO - 127.0.0.1 - - [15/May/2026 13:23:22] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:23:22,945 - INFO - 127.0.0.1 - - [15/May/2026 13:23:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:23:40,037 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:23:40,146 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:23:40,240 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:23:40,348 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:24:00,053 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:24:00,160 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:24:00,253 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:24:00,362 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:24:25,064 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:24:25,065 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '01']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:24:25,174 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:24:25,175 - WARNING - 任务失败: crawl_and_save_history_aqi(['beijing', '北京', '2020', '01']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-05-15 13:24:25,268 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:24:25,268 - WARNING - 任务失败: crawl_and_save_history_weather(['beijing', '北京', '2020', '02']) - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-05-15 13:25:27,114 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-15 13:25:27,114 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:25:27,116 - INFO -  * Restarting with stat
+2026-05-15 13:25:28,150 - WARNING -  * Debugger is active!
+2026-05-15 13:25:28,158 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:25:29,567 - INFO - 127.0.0.1 - - [15/May/2026 13:25:29] "GET / HTTP/1.1" 200 -
+2026-05-15 13:25:29,634 - INFO - 127.0.0.1 - - [15/May/2026 13:25:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:25:30,876 - INFO - 127.0.0.1 - - [15/May/2026 13:25:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-15 13:25:30,883 - INFO - 127.0.0.1 - - [15/May/2026 13:25:30] "GET /login HTTP/1.1" 200 -
+2026-05-15 13:25:30,905 - INFO - 127.0.0.1 - - [15/May/2026 13:25:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:25:40,316 - INFO - 127.0.0.1 - - [15/May/2026 13:25:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-15 13:25:40,321 - INFO - 127.0.0.1 - - [15/May/2026 13:25:40] "GET / HTTP/1.1" 200 -
+2026-05-15 13:25:40,345 - INFO - 127.0.0.1 - - [15/May/2026 13:25:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:25:45,032 - INFO - 127.0.0.1 - - [15/May/2026 13:25:45] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:25:45,054 - INFO - 127.0.0.1 - - [15/May/2026 13:25:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:26:02,847 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-05-15 13:26:02,940 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-05-15 13:26:03,047 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-05-15 13:26:03,140 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-05-15 13:29:46,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:29:46,645 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:29:46,647 - INFO -  * Restarting with stat
+2026-05-15 13:29:47,842 - WARNING -  * Debugger is active!
+2026-05-15 13:29:47,849 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:29:49,121 - INFO - 127.0.0.1 - - [15/May/2026 13:29:49] "GET / HTTP/1.1" 200 -
+2026-05-15 13:29:49,190 - INFO - 127.0.0.1 - - [15/May/2026 13:29:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:29:51,986 - INFO - 127.0.0.1 - - [15/May/2026 13:29:51] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:29:52,006 - INFO - 127.0.0.1 - - [15/May/2026 13:29:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:29:55,196 - INFO - 北京 2020-01: 成功处理 31 条天气数据
+2026-05-15 13:29:55,231 - INFO - 北京 2020-01: 成功处理 31 条AQI数据
+2026-05-15 13:29:55,312 - INFO - 北京 2020-02: 成功处理 29 条天气数据
+2026-05-15 13:29:55,409 - INFO - 北京 2020-02: 成功处理 29 条AQI数据
+2026-05-15 13:29:56,277 - INFO - 北京 2020-03: 成功处理 31 条天气数据
+2026-05-15 13:29:56,355 - INFO - 北京 2020-03: 成功处理 31 条AQI数据
+2026-05-15 13:29:56,400 - INFO - 北京 2020-04: 成功处理 30 条天气数据
+2026-05-15 13:29:56,506 - INFO - 北京 2020-04: 成功处理 30 条AQI数据
+2026-05-15 13:29:57,324 - INFO - 北京 2020-05: 成功处理 31 条天气数据
+2026-05-15 13:29:57,450 - INFO - 北京 2020-06: 成功处理 30 条天气数据
+2026-05-15 13:29:57,478 - INFO - 北京 2020-05: 成功处理 31 条AQI数据
+2026-05-15 13:29:57,542 - INFO - 北京 2020-06: 成功处理 30 条AQI数据
+2026-05-15 13:29:58,365 - INFO - 北京 2020-07: 成功处理 31 条天气数据
+2026-05-15 13:29:58,503 - INFO - 北京 2020-08: 成功处理 31 条天气数据
+2026-05-15 13:29:58,520 - INFO - 北京 2020-07: 成功处理 31 条AQI数据
+2026-05-15 13:29:58,610 - INFO - 北京 2020-08: 成功处理 31 条AQI数据
+2026-05-15 13:29:59,294 - INFO - 北京 2020-09: 成功处理 30 条天气数据
+2026-05-15 13:29:59,554 - INFO - 北京 2020-09: 成功处理 30 条AQI数据
+2026-05-15 13:29:59,555 - INFO - 北京 2020-10: 成功处理 31 条天气数据
+2026-05-15 13:29:59,652 - INFO - 北京 2020-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:00,236 - INFO - 北京 2020-11: 成功处理 30 条天气数据
+2026-05-15 13:30:00,613 - INFO - 北京 2020-12: 成功处理 31 条天气数据
+2026-05-15 13:30:00,626 - INFO - 北京 2020-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:00,768 - INFO - 北京 2020-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:01,161 - INFO - 北京 2021-01: 成功处理 31 条天气数据
+2026-05-15 13:30:01,668 - INFO - 北京 2021-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:01,698 - INFO - 北京 2021-02: 成功处理 28 条天气数据
+2026-05-15 13:30:01,837 - INFO - 北京 2021-02: 成功处理 28 条AQI数据
+2026-05-15 13:30:02,074 - INFO - 北京 2021-03: 成功处理 31 条天气数据
+2026-05-15 13:30:02,751 - INFO - 北京 2021-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:02,752 - INFO - 北京 2021-04: 成功处理 30 条天气数据
+2026-05-15 13:30:02,838 - INFO - 北京 2021-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:02,972 - INFO - 北京 2021-05: 成功处理 31 条天气数据
+2026-05-15 13:30:03,832 - INFO - 北京 2021-06: 成功处理 30 条天气数据
+2026-05-15 13:30:03,879 - INFO - 北京 2021-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:03,897 - INFO - 北京 2021-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:03,988 - INFO - 北京 2021-07: 成功处理 31 条天气数据
+2026-05-15 13:30:04,979 - INFO - 北京 2021-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:04,985 - INFO - 北京 2021-08: 成功处理 31 条天气数据
+2026-05-15 13:30:04,991 - INFO - 北京 2021-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:05,071 - INFO - 北京 2021-09: 成功处理 30 条天气数据
+2026-05-15 13:30:06,102 - INFO - 北京 2021-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:06,129 - INFO - 北京 2021-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:06,151 - INFO - 北京 2021-10: 成功处理 31 条天气数据
+2026-05-15 13:30:06,157 - INFO - 北京 2021-11: 成功处理 30 条天气数据
+2026-05-15 13:30:06,574 - INFO - 127.0.0.1 - - [15/May/2026 13:30:06] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:06,595 - INFO - 127.0.0.1 - - [15/May/2026 13:30:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:07,045 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:07,063 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:07,211 - INFO - 北京 2022-01: 成功处理 31 条天气数据
+2026-05-15 13:30:07,263 - INFO - 北京 2021-12: 成功处理 31 条天气数据
+2026-05-15 13:30:07,273 - INFO - 北京 2021-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:07,293 - INFO - 北京 2021-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:07,372 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:07,390 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:07,584 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:07,602 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:07,818 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:07,835 - INFO - 127.0.0.1 - - [15/May/2026 13:30:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:08,000 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:08,018 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:08,176 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:08,193 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:08,315 - INFO - 北京 2022-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:08,371 - INFO - 北京 2022-02: 成功处理 28 条天气数据
+2026-05-15 13:30:08,377 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:08,395 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:08,410 - INFO - 北京 2022-03: 成功处理 31 条天气数据
+2026-05-15 13:30:08,417 - INFO - 北京 2022-02: 成功处理 28 条AQI数据
+2026-05-15 13:30:08,575 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:08,594 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:08,751 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:08,766 - INFO - 127.0.0.1 - - [15/May/2026 13:30:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:09,439 - INFO - 北京 2022-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:09,517 - INFO - 北京 2022-04: 成功处理 30 条天气数据
+2026-05-15 13:30:09,536 - INFO - 北京 2022-05: 成功处理 31 条天气数据
+2026-05-15 13:30:09,582 - INFO - 北京 2022-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:10,497 - INFO - 北京 2022-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:10,546 - INFO - 北京 2022-06: 成功处理 30 条天气数据
+2026-05-15 13:30:10,599 - INFO - 北京 2022-07: 成功处理 31 条天气数据
+2026-05-15 13:30:10,635 - INFO - 北京 2022-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:11,561 - INFO - 北京 2022-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:11,596 - INFO - 北京 2022-08: 成功处理 31 条天气数据
+2026-05-15 13:30:11,696 - INFO - 北京 2022-09: 成功处理 30 条天气数据
+2026-05-15 13:30:11,726 - INFO - 北京 2022-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:12,566 - INFO - 北京 2022-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:12,669 - INFO - 北京 2022-10: 成功处理 31 条天气数据
+2026-05-15 13:30:12,786 - INFO - 北京 2022-11: 成功处理 36 条天气数据
+2026-05-15 13:30:12,792 - INFO - 北京 2022-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:13,567 - INFO - 北京 2022-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:13,691 - INFO - 北京 2022-12: 成功处理 31 条天气数据
+2026-05-15 13:30:13,850 - INFO - 北京 2023-01: 成功处理 31 条天气数据
+2026-05-15 13:30:13,896 - INFO - 北京 2022-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:14,674 - INFO - 北京 2023-02: 成功处理 28 条天气数据
+2026-05-15 13:30:14,675 - INFO - 北京 2023-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:14,905 - INFO - 北京 2023-02: 成功处理 28 条AQI数据
+2026-05-15 13:30:14,906 - INFO - 北京 2023-03: 成功处理 31 条天气数据
+2026-05-15 13:30:15,718 - INFO - 北京 2023-03: 成功处理 32 条AQI数据
+2026-05-15 13:30:15,734 - INFO - 北京 2023-04: 成功处理 30 条天气数据
+2026-05-15 13:30:15,931 - INFO - 北京 2023-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:15,935 - INFO - 北京 2023-05: 成功处理 31 条天气数据
+2026-05-15 13:30:16,797 - INFO - 北京 2023-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:16,799 - INFO - 北京 2023-06: 成功处理 30 条天气数据
+2026-05-15 13:30:16,952 - INFO - 北京 2023-07: 成功处理 31 条天气数据
+2026-05-15 13:30:16,976 - INFO - 北京 2023-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:17,838 - INFO - 北京 2023-08: 成功处理 31 条天气数据
+2026-05-15 13:30:17,867 - INFO - 北京 2023-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:17,978 - INFO - 北京 2023-09: 成功处理 30 条天气数据
+2026-05-15 13:30:17,994 - INFO - 北京 2023-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:18,904 - INFO - 北京 2023-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:18,919 - INFO - 北京 2023-10: 成功处理 31 条天气数据
+2026-05-15 13:30:19,075 - INFO - 北京 2023-10: 成功处理 20 条AQI数据
+2026-05-15 13:30:19,078 - INFO - 北京 2023-11: 成功处理 30 条天气数据
+2026-05-15 13:30:19,938 - INFO - 北京 2023-12: 成功处理 31 条天气数据
+2026-05-15 13:30:20,002 - INFO - 北京 2023-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:20,126 - INFO - 北京 2024-01: 成功处理 31 条天气数据
+2026-05-15 13:30:20,858 - INFO - 北京 2023-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:20,961 - INFO - 北京 2024-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:20,980 - INFO - 北京 2024-02: 成功处理 29 条天气数据
+2026-05-15 13:30:21,107 - INFO - 北京 2024-02: 成功处理 29 条AQI数据
+2026-05-15 13:30:21,610 - INFO - 127.0.0.1 - - [15/May/2026 13:30:21] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:21,628 - INFO - 127.0.0.1 - - [15/May/2026 13:30:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:21,876 - INFO - 北京 2024-03: 成功处理 31 条天气数据
+2026-05-15 13:30:22,029 - INFO - 北京 2024-04: 成功处理 30 条天气数据
+2026-05-15 13:30:22,039 - INFO - 北京 2024-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:22,119 - INFO - 北京 2024-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:22,237 - INFO - 127.0.0.1 - - [15/May/2026 13:30:22] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:22,254 - INFO - 127.0.0.1 - - [15/May/2026 13:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:22,660 - INFO - 127.0.0.1 - - [15/May/2026 13:30:22] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:22,677 - INFO - 127.0.0.1 - - [15/May/2026 13:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:22,857 - INFO - 北京 2024-05: 成功处理 31 条天气数据
+2026-05-15 13:30:22,882 - INFO - 127.0.0.1 - - [15/May/2026 13:30:22] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:22,903 - INFO - 127.0.0.1 - - [15/May/2026 13:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:23,064 - INFO - 北京 2024-06: 成功处理 30 条天气数据
+2026-05-15 13:30:23,102 - INFO - 127.0.0.1 - - [15/May/2026 13:30:23] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:23,118 - INFO - 北京 2024-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:23,126 - INFO - 127.0.0.1 - - [15/May/2026 13:30:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:23,207 - INFO - 北京 2024-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:23,318 - INFO - 127.0.0.1 - - [15/May/2026 13:30:23] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:23,337 - INFO - 127.0.0.1 - - [15/May/2026 13:30:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:23,484 - INFO - 127.0.0.1 - - [15/May/2026 13:30:23] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:30:23,501 - INFO - 127.0.0.1 - - [15/May/2026 13:30:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:30:23,784 - INFO - 北京 2024-07: 成功处理 31 条天气数据
+2026-05-15 13:30:24,134 - INFO - 北京 2024-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:24,180 - INFO - 北京 2024-08: 成功处理 31 条天气数据
+2026-05-15 13:30:24,215 - INFO - 北京 2024-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:24,646 - INFO - 北京 2024-09: 成功处理 30 条天气数据
+2026-05-15 13:30:25,271 - INFO - 北京 2024-10: 成功处理 31 条天气数据
+2026-05-15 13:30:25,285 - INFO - 北京 2024-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:25,314 - INFO - 北京 2024-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:25,489 - INFO - 北京 2024-11: 成功处理 30 条天气数据
+2026-05-15 13:30:26,335 - INFO - 北京 2024-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:26,395 - INFO - 北京 2024-12: 成功处理 31 条天气数据
+2026-05-15 13:30:26,443 - INFO - 北京 2024-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:26,555 - INFO - 上海 2020-01: 成功处理 31 条天气数据
+2026-05-15 13:30:27,325 - INFO - 上海 2020-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:27,429 - INFO - 上海 2020-02: 成功处理 29 条天气数据
+2026-05-15 13:30:27,510 - INFO - 上海 2020-02: 成功处理 29 条AQI数据
+2026-05-15 13:30:27,634 - INFO - 上海 2020-03: 成功处理 31 条天气数据
+2026-05-15 13:30:28,268 - INFO - 上海 2020-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:28,419 - INFO - 上海 2020-04: 成功处理 30 条天气数据
+2026-05-15 13:30:28,565 - INFO - 上海 2020-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:28,674 - INFO - 上海 2020-05: 成功处理 31 条天气数据
+2026-05-15 13:30:29,256 - INFO - 上海 2020-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:29,414 - INFO - 上海 2020-06: 成功处理 30 条天气数据
+2026-05-15 13:30:29,638 - INFO - 上海 2020-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:29,729 - INFO - 上海 2020-07: 成功处理 31 条天气数据
+2026-05-15 13:30:30,233 - INFO - 上海 2020-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:30,425 - INFO - 上海 2020-08: 成功处理 31 条天气数据
+2026-05-15 13:30:30,769 - INFO - 上海 2020-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:30,809 - INFO - 上海 2020-09: 成功处理 30 条天气数据
+2026-05-15 13:30:31,293 - INFO - 上海 2020-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:31,387 - INFO - 上海 2020-10: 成功处理 31 条天气数据
+2026-05-15 13:30:31,857 - INFO - 上海 2020-11: 成功处理 30 条天气数据
+2026-05-15 13:30:31,913 - INFO - 上海 2020-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:32,425 - INFO - 上海 2020-12: 成功处理 31 条天气数据
+2026-05-15 13:30:32,427 - INFO - 上海 2020-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:32,911 - INFO - 上海 2020-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:32,962 - INFO - 上海 2021-01: 成功处理 31 条天气数据
+2026-05-15 13:30:33,553 - INFO - 上海 2021-02: 成功处理 28 条天气数据
+2026-05-15 13:30:33,569 - INFO - 上海 2021-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:34,042 - INFO - 上海 2021-03: 成功处理 31 条天气数据
+2026-05-15 13:30:34,055 - INFO - 上海 2021-02: 成功处理 28 条AQI数据
+2026-05-15 13:30:34,731 - INFO - 上海 2021-04: 成功处理 30 条天气数据
+2026-05-15 13:30:34,735 - INFO - 上海 2021-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:35,059 - INFO - 上海 2021-05: 成功处理 31 条天气数据
+2026-05-15 13:30:35,089 - INFO - 上海 2021-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:35,732 - INFO - 上海 2021-06: 成功处理 30 条天气数据
+2026-05-15 13:30:35,748 - INFO - 上海 2021-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:36,119 - INFO - 上海 2021-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:36,120 - INFO - 上海 2021-07: 成功处理 31 条天气数据
+2026-05-15 13:30:36,837 - INFO - 上海 2021-08: 成功处理 31 条天气数据
+2026-05-15 13:30:36,873 - INFO - 上海 2021-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:37,127 - INFO - 上海 2021-09: 成功处理 30 条天气数据
+2026-05-15 13:30:37,184 - INFO - 上海 2021-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:37,862 - INFO - 上海 2021-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:37,924 - INFO - 上海 2021-10: 成功处理 31 条天气数据
+2026-05-15 13:30:38,148 - INFO - 上海 2021-11: 成功处理 30 条天气数据
+2026-05-15 13:30:38,156 - INFO - 上海 2021-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:38,930 - INFO - 上海 2021-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:38,935 - INFO - 上海 2021-12: 成功处理 31 条天气数据
+2026-05-15 13:30:39,177 - INFO - 上海 2022-01: 成功处理 31 条天气数据
+2026-05-15 13:30:39,210 - INFO - 上海 2021-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:39,916 - INFO - 上海 2022-02: 成功处理 28 条天气数据
+2026-05-15 13:30:39,991 - INFO - 上海 2022-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:40,189 - INFO - 上海 2022-02: 成功处理 28 条AQI数据
+2026-05-15 13:30:40,201 - INFO - 上海 2022-03: 成功处理 31 条天气数据
+2026-05-15 13:30:41,036 - INFO - 上海 2022-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:41,048 - INFO - 上海 2022-04: 成功处理 30 条天气数据
+2026-05-15 13:30:41,284 - INFO - 上海 2022-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:41,318 - INFO - 上海 2022-05: 成功处理 31 条天气数据
+2026-05-15 13:30:42,064 - INFO - 上海 2022-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:42,065 - INFO - 上海 2022-06: 成功处理 30 条天气数据
+2026-05-15 13:30:42,307 - INFO - 上海 2022-07: 成功处理 31 条天气数据
+2026-05-15 13:30:42,321 - INFO - 上海 2022-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:43,115 - INFO - 上海 2022-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:43,117 - INFO - 上海 2022-08: 成功处理 31 条天气数据
+2026-05-15 13:30:43,344 - INFO - 上海 2022-09: 成功处理 30 条天气数据
+2026-05-15 13:30:43,361 - INFO - 上海 2022-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:44,157 - INFO - 上海 2022-10: 成功处理 31 条天气数据
+2026-05-15 13:30:44,163 - INFO - 上海 2022-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:44,379 - INFO - 上海 2022-11: 成功处理 30 条天气数据
+2026-05-15 13:30:44,410 - INFO - 上海 2022-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:45,175 - INFO - 上海 2022-12: 成功处理 31 条天气数据
+2026-05-15 13:30:45,202 - INFO - 上海 2022-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:45,375 - INFO - 上海 2022-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:45,405 - INFO - 上海 2023-01: 成功处理 31 条天气数据
+2026-05-15 13:30:46,215 - INFO - 上海 2023-02: 成功处理 28 条天气数据
+2026-05-15 13:30:46,223 - INFO - 上海 2023-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:46,406 - INFO - 上海 2023-02: 成功处理 28 条AQI数据
+2026-05-15 13:30:46,418 - INFO - 上海 2023-03: 成功处理 31 条天气数据
+2026-05-15 13:30:47,245 - INFO - 上海 2023-04: 成功处理 30 条天气数据
+2026-05-15 13:30:47,260 - INFO - 上海 2023-03: 成功处理 32 条AQI数据
+2026-05-15 13:30:47,416 - INFO - 上海 2023-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:47,417 - INFO - 上海 2023-05: 成功处理 31 条天气数据
+2026-05-15 13:30:48,290 - INFO - 上海 2023-06: 成功处理 30 条天气数据
+2026-05-15 13:30:48,302 - INFO - 上海 2023-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:48,479 - INFO - 上海 2023-07: 成功处理 31 条天气数据
+2026-05-15 13:30:48,491 - INFO - 上海 2023-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:49,326 - INFO - 上海 2023-08: 成功处理 31 条天气数据
+2026-05-15 13:30:49,356 - INFO - 上海 2023-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:49,505 - INFO - 上海 2023-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:49,509 - INFO - 上海 2023-09: 成功处理 30 条天气数据
+2026-05-15 13:30:50,393 - INFO - 上海 2023-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:50,395 - INFO - 上海 2023-10: 成功处理 31 条天气数据
+2026-05-15 13:30:50,549 - INFO - 上海 2023-10: 成功处理 20 条AQI数据
+2026-05-15 13:30:50,564 - INFO - 上海 2023-11: 成功处理 30 条天气数据
+2026-05-15 13:30:51,420 - INFO - 上海 2023-12: 成功处理 31 条天气数据
+2026-05-15 13:30:51,445 - INFO - 上海 2023-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:51,586 - INFO - 上海 2024-01: 成功处理 31 条天气数据
+2026-05-15 13:30:51,613 - INFO - 上海 2023-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:52,465 - INFO - 上海 2024-02: 成功处理 29 条天气数据
+2026-05-15 13:30:52,477 - INFO - 上海 2024-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:52,666 - INFO - 上海 2024-02: 成功处理 29 条AQI数据
+2026-05-15 13:30:52,668 - INFO - 上海 2024-03: 成功处理 31 条天气数据
+2026-05-15 13:30:53,519 - INFO - 上海 2024-04: 成功处理 30 条天气数据
+2026-05-15 13:30:53,521 - INFO - 上海 2024-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:53,699 - INFO - 上海 2024-05: 成功处理 31 条天气数据
+2026-05-15 13:30:53,718 - INFO - 上海 2024-04: 成功处理 30 条AQI数据
+2026-05-15 13:30:54,544 - INFO - 上海 2024-05: 成功处理 31 条AQI数据
+2026-05-15 13:30:54,553 - INFO - 上海 2024-06: 成功处理 30 条天气数据
+2026-05-15 13:30:54,740 - INFO - 上海 2024-06: 成功处理 30 条AQI数据
+2026-05-15 13:30:54,750 - INFO - 上海 2024-07: 成功处理 31 条天气数据
+2026-05-15 13:30:55,590 - INFO - 上海 2024-07: 成功处理 31 条AQI数据
+2026-05-15 13:30:55,602 - INFO - 上海 2024-08: 成功处理 31 条天气数据
+2026-05-15 13:30:55,792 - INFO - 上海 2024-08: 成功处理 31 条AQI数据
+2026-05-15 13:30:55,793 - INFO - 上海 2024-09: 成功处理 30 条天气数据
+2026-05-15 13:30:56,581 - INFO - 上海 2024-09: 成功处理 30 条AQI数据
+2026-05-15 13:30:56,628 - INFO - 上海 2024-10: 成功处理 31 条天气数据
+2026-05-15 13:30:56,810 - INFO - 上海 2024-11: 成功处理 30 条天气数据
+2026-05-15 13:30:56,859 - INFO - 上海 2024-10: 成功处理 31 条AQI数据
+2026-05-15 13:30:57,562 - INFO - 上海 2024-11: 成功处理 30 条AQI数据
+2026-05-15 13:30:57,637 - INFO - 上海 2024-12: 成功处理 31 条天气数据
+2026-05-15 13:30:57,854 - INFO - 上海 2024-12: 成功处理 31 条AQI数据
+2026-05-15 13:30:57,856 - INFO - 广州 2020-01: 成功处理 31 条天气数据
+2026-05-15 13:30:58,641 - INFO - 广州 2020-01: 成功处理 31 条AQI数据
+2026-05-15 13:30:58,655 - INFO - 广州 2020-02: 成功处理 29 条天气数据
+2026-05-15 13:30:58,858 - INFO - 广州 2020-03: 成功处理 31 条天气数据
+2026-05-15 13:30:58,882 - INFO - 广州 2020-02: 成功处理 29 条AQI数据
+2026-05-15 13:30:59,664 - INFO - 广州 2020-03: 成功处理 31 条AQI数据
+2026-05-15 13:30:59,698 - INFO - 广州 2020-04: 成功处理 30 条天气数据
+2026-05-15 13:30:59,866 - INFO - 广州 2020-05: 成功处理 31 条天气数据
+2026-05-15 13:30:59,873 - INFO - 广州 2020-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:00,735 - INFO - 广州 2020-06: 成功处理 30 条天气数据
+2026-05-15 13:31:00,737 - INFO - 广州 2020-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:00,873 - INFO - 广州 2020-07: 成功处理 31 条天气数据
+2026-05-15 13:31:00,886 - INFO - 广州 2020-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:01,734 - INFO - 广州 2020-08: 成功处理 31 条天气数据
+2026-05-15 13:31:01,818 - INFO - 广州 2020-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:01,911 - INFO - 广州 2020-09: 成功处理 30 条天气数据
+2026-05-15 13:31:01,931 - INFO - 广州 2020-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:02,793 - INFO - 广州 2020-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:02,840 - INFO - 广州 2020-10: 成功处理 31 条天气数据
+2026-05-15 13:31:02,947 - INFO - 广州 2020-11: 成功处理 30 条天气数据
+2026-05-15 13:31:02,956 - INFO - 广州 2020-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:03,839 - INFO - 广州 2020-12: 成功处理 31 条天气数据
+2026-05-15 13:31:03,858 - INFO - 广州 2020-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:03,999 - INFO - 广州 2020-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:04,000 - INFO - 广州 2021-01: 成功处理 31 条天气数据
+2026-05-15 13:31:04,874 - INFO - 广州 2021-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:04,888 - INFO - 广州 2021-02: 成功处理 28 条天气数据
+2026-05-15 13:31:05,074 - INFO - 广州 2021-03: 成功处理 31 条天气数据
+2026-05-15 13:31:05,212 - INFO - 广州 2021-02: 成功处理 28 条AQI数据
+2026-05-15 13:31:05,843 - INFO - 广州 2021-04: 成功处理 30 条天气数据
+2026-05-15 13:31:05,873 - INFO - 广州 2021-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:06,140 - INFO - 广州 2021-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:06,166 - INFO - 广州 2021-05: 成功处理 31 条天气数据
+2026-05-15 13:31:06,891 - INFO - 广州 2021-06: 成功处理 30 条天气数据
+2026-05-15 13:31:06,893 - INFO - 广州 2021-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:07,142 - INFO - 广州 2021-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:07,144 - INFO - 广州 2021-07: 成功处理 31 条天气数据
+2026-05-15 13:31:07,911 - INFO - 广州 2021-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:07,916 - INFO - 广州 2021-08: 成功处理 31 条天气数据
+2026-05-15 13:31:08,132 - INFO - 广州 2021-09: 成功处理 30 条天气数据
+2026-05-15 13:31:08,170 - INFO - 广州 2021-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:08,936 - INFO - 广州 2021-10: 成功处理 31 条天气数据
+2026-05-15 13:31:08,976 - INFO - 广州 2021-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:09,150 - INFO - 广州 2021-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:09,159 - INFO - 广州 2021-11: 成功处理 30 条天气数据
+2026-05-15 13:31:09,960 - INFO - 广州 2021-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:09,986 - INFO - 广州 2021-12: 成功处理 31 条天气数据
+2026-05-15 13:31:10,158 - INFO - 广州 2022-01: 成功处理 31 条天气数据
+2026-05-15 13:31:10,159 - INFO - 广州 2021-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:10,982 - INFO - 广州 2022-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:10,991 - INFO - 广州 2022-02: 成功处理 28 条天气数据
+2026-05-15 13:31:11,196 - INFO - 广州 2022-03: 成功处理 31 条天气数据
+2026-05-15 13:31:11,209 - INFO - 广州 2022-02: 成功处理 28 条AQI数据
+2026-05-15 13:31:12,030 - INFO - 广州 2022-04: 成功处理 30 条天气数据
+2026-05-15 13:31:12,061 - INFO - 广州 2022-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:12,248 - INFO - 广州 2022-05: 成功处理 31 条天气数据
+2026-05-15 13:31:12,249 - INFO - 广州 2022-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:13,002 - INFO - 广州 2022-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:13,026 - INFO - 广州 2022-06: 成功处理 30 条天气数据
+2026-05-15 13:31:13,231 - INFO - 广州 2022-07: 成功处理 31 条天气数据
+2026-05-15 13:31:13,283 - INFO - 广州 2022-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:14,009 - INFO - 广州 2022-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:14,111 - INFO - 广州 2022-08: 成功处理 31 条天气数据
+2026-05-15 13:31:14,248 - INFO - 广州 2022-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:14,296 - INFO - 广州 2022-09: 成功处理 30 条天气数据
+2026-05-15 13:31:14,993 - INFO - 广州 2022-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:15,135 - INFO - 广州 2022-10: 成功处理 31 条天气数据
+2026-05-15 13:31:15,260 - INFO - 广州 2022-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:15,273 - INFO - 广州 2022-11: 成功处理 30 条天气数据
+2026-05-15 13:31:15,940 - INFO - 广州 2022-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:16,112 - INFO - 广州 2022-12: 成功处理 31 条天气数据
+2026-05-15 13:31:16,270 - INFO - 广州 2023-01: 成功处理 31 条天气数据
+2026-05-15 13:31:16,282 - INFO - 广州 2022-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:16,903 - INFO - 广州 2023-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:17,105 - INFO - 广州 2023-02: 成功处理 28 条天气数据
+2026-05-15 13:31:17,307 - INFO - 广州 2023-03: 成功处理 31 条天气数据
+2026-05-15 13:31:17,322 - INFO - 广州 2023-02: 成功处理 28 条AQI数据
+2026-05-15 13:31:17,863 - INFO - 广州 2023-03: 成功处理 32 条AQI数据
+2026-05-15 13:31:18,083 - INFO - 广州 2023-04: 成功处理 30 条天气数据
+2026-05-15 13:31:18,319 - INFO - 广州 2023-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:18,331 - INFO - 广州 2023-05: 成功处理 31 条天气数据
+2026-05-15 13:31:18,786 - INFO - 广州 2023-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:19,087 - INFO - 广州 2023-06: 成功处理 30 条天气数据
+2026-05-15 13:31:19,347 - INFO - 广州 2023-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:19,356 - INFO - 广州 2023-07: 成功处理 31 条天气数据
+2026-05-15 13:31:19,736 - INFO - 广州 2023-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:20,065 - INFO - 广州 2023-08: 成功处理 31 条天气数据
+2026-05-15 13:31:20,359 - INFO - 广州 2023-09: 成功处理 30 条天气数据
+2026-05-15 13:31:20,360 - INFO - 广州 2023-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:20,704 - INFO - 广州 2023-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:21,000 - INFO - 广州 2023-10: 成功处理 30 条天气数据
+2026-05-15 13:31:21,388 - INFO - 广州 2023-10: 成功处理 20 条AQI数据
+2026-05-15 13:31:21,403 - INFO - 广州 2023-11: 成功处理 30 条天气数据
+2026-05-15 13:31:21,703 - INFO - 广州 2023-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:21,940 - INFO - 广州 2023-12: 成功处理 30 条天气数据
+2026-05-15 13:31:22,380 - INFO - 广州 2024-01: 成功处理 31 条天气数据
+2026-05-15 13:31:22,394 - INFO - 广州 2023-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:22,689 - INFO - 广州 2024-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:22,868 - INFO - 广州 2024-02: 成功处理 29 条天气数据
+2026-05-15 13:31:23,423 - INFO - 广州 2024-03: 成功处理 31 条天气数据
+2026-05-15 13:31:23,435 - INFO - 广州 2024-02: 成功处理 29 条AQI数据
+2026-05-15 13:31:23,661 - INFO - 广州 2024-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:23,797 - INFO - 广州 2024-04: 成功处理 30 条天气数据
+2026-05-15 13:31:24,440 - INFO - 广州 2024-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:24,456 - INFO - 广州 2024-05: 成功处理 31 条天气数据
+2026-05-15 13:31:24,687 - INFO - 广州 2024-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:24,750 - INFO - 广州 2024-06: 成功处理 30 条天气数据
+2026-05-15 13:31:25,509 - INFO - 广州 2024-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:25,511 - INFO - 广州 2024-07: 成功处理 31 条天气数据
+2026-05-15 13:31:25,723 - INFO - 广州 2024-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:25,744 - INFO - 广州 2024-08: 成功处理 31 条天气数据
+2026-05-15 13:31:26,547 - INFO - 广州 2024-09: 成功处理 30 条天气数据
+2026-05-15 13:31:26,765 - INFO - 广州 2024-10: 成功处理 31 条天气数据
+2026-05-15 13:31:26,765 - INFO - 广州 2024-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:26,908 - INFO - 广州 2024-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:27,444 - INFO - 广州 2024-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:27,824 - INFO - 广州 2024-11: 成功处理 30 条天气数据
+2026-05-15 13:31:27,828 - INFO - 广州 2024-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:27,934 - INFO - 广州 2024-12: 成功处理 31 条天气数据
+2026-05-15 13:31:28,370 - INFO - 广州 2024-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:28,869 - INFO - 深圳 2020-01: 成功处理 31 条天气数据
+2026-05-15 13:31:28,885 - INFO - 深圳 2020-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:28,947 - INFO - 深圳 2020-02: 成功处理 29 条天气数据
+2026-05-15 13:31:29,230 - INFO - 深圳 2020-02: 成功处理 29 条AQI数据
+2026-05-15 13:31:29,875 - INFO - 深圳 2020-03: 成功处理 31 条天气数据
+2026-05-15 13:31:29,930 - INFO - 深圳 2020-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:29,948 - INFO - 深圳 2020-04: 成功处理 30 条天气数据
+2026-05-15 13:31:30,170 - INFO - 深圳 2020-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:30,882 - INFO - 深圳 2020-05: 成功处理 31 条天气数据
+2026-05-15 13:31:30,956 - INFO - 深圳 2020-06: 成功处理 30 条天气数据
+2026-05-15 13:31:30,974 - INFO - 深圳 2020-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:31,179 - INFO - 深圳 2020-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:31,890 - INFO - 深圳 2020-07: 成功处理 31 条天气数据
+2026-05-15 13:31:32,003 - INFO - 深圳 2020-08: 成功处理 31 条天气数据
+2026-05-15 13:31:32,009 - INFO - 深圳 2020-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:32,183 - INFO - 深圳 2020-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:32,788 - INFO - 深圳 2020-09: 成功处理 30 条天气数据
+2026-05-15 13:31:33,325 - INFO - 深圳 2020-10: 成功处理 31 条天气数据
+2026-05-15 13:31:33,329 - INFO - 深圳 2020-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:33,330 - INFO - 深圳 2020-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:33,877 - INFO - 深圳 2020-11: 成功处理 30 条天气数据
+2026-05-15 13:31:34,758 - INFO - 深圳 2020-12: 成功处理 31 条天气数据
+2026-05-15 13:31:34,760 - INFO - 深圳 2020-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:34,763 - INFO - 深圳 2020-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:34,955 - INFO - 深圳 2021-01: 成功处理 31 条天气数据
+2026-05-15 13:31:36,354 - INFO - 深圳 2021-02: 成功处理 28 条天气数据
+2026-05-15 13:31:36,357 - INFO - 深圳 2021-02: 成功处理 28 条AQI数据
+2026-05-15 13:31:36,391 - INFO - 深圳 2021-03: 成功处理 31 条天气数据
+2026-05-15 13:31:36,393 - INFO - 深圳 2021-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:37,571 - INFO - 深圳 2021-04: 成功处理 30 条天气数据
+2026-05-15 13:31:37,579 - INFO - 深圳 2021-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:37,619 - INFO - 深圳 2021-05: 成功处理 31 条天气数据
+2026-05-15 13:31:37,667 - INFO - 深圳 2021-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:38,675 - INFO - 深圳 2021-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:38,690 - INFO - 深圳 2021-06: 成功处理 30 条天气数据
+2026-05-15 13:31:38,785 - INFO - 深圳 2021-07: 成功处理 31 条天气数据
+2026-05-15 13:31:38,786 - INFO - 深圳 2021-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:39,812 - INFO - 深圳 2021-08: 成功处理 31 条天气数据
+2026-05-15 13:31:39,890 - INFO - 深圳 2021-09: 成功处理 30 条天气数据
+2026-05-15 13:31:39,891 - INFO - 深圳 2021-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:39,919 - INFO - 深圳 2021-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:40,828 - INFO - 深圳 2021-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:40,935 - INFO - 深圳 2021-10: 成功处理 31 条天气数据
+2026-05-15 13:31:40,947 - INFO - 深圳 2021-11: 成功处理 30 条天气数据
+2026-05-15 13:31:40,948 - INFO - 深圳 2021-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:41,861 - INFO - 深圳 2021-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:41,994 - INFO - 深圳 2021-12: 成功处理 31 条天气数据
+2026-05-15 13:31:42,041 - INFO - 深圳 2021-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:42,056 - INFO - 深圳 2022-01: 成功处理 31 条天气数据
+2026-05-15 13:31:42,903 - INFO - 深圳 2022-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:43,043 - INFO - 深圳 2022-02: 成功处理 28 条天气数据
+2026-05-15 13:31:43,045 - INFO - 深圳 2022-03: 成功处理 31 条天气数据
+2026-05-15 13:31:43,090 - INFO - 深圳 2022-02: 成功处理 28 条AQI数据
+2026-05-15 13:31:43,956 - INFO - 深圳 2022-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:44,094 - INFO - 深圳 2022-04: 成功处理 30 条天气数据
+2026-05-15 13:31:44,109 - INFO - 深圳 2022-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:44,127 - INFO - 深圳 2022-05: 成功处理 31 条天气数据
+2026-05-15 13:31:44,991 - INFO - 深圳 2022-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:45,084 - INFO - 深圳 2022-06: 成功处理 30 条天气数据
+2026-05-15 13:31:45,178 - INFO - 深圳 2022-07: 成功处理 31 条天气数据
+2026-05-15 13:31:45,179 - INFO - 深圳 2022-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:45,998 - INFO - 深圳 2022-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:46,091 - INFO - 深圳 2022-08: 成功处理 31 条天气数据
+2026-05-15 13:31:46,197 - INFO - 深圳 2022-09: 成功处理 30 条天气数据
+2026-05-15 13:31:46,242 - INFO - 深圳 2022-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:46,983 - INFO - 深圳 2022-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:47,110 - INFO - 深圳 2022-10: 成功处理 31 条天气数据
+2026-05-15 13:31:47,248 - INFO - 深圳 2022-11: 成功处理 30 条天气数据
+2026-05-15 13:31:47,257 - INFO - 深圳 2022-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:47,974 - INFO - 深圳 2022-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:48,113 - INFO - 深圳 2022-12: 成功处理 31 条天气数据
+2026-05-15 13:31:48,272 - INFO - 深圳 2022-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:48,300 - INFO - 深圳 2023-01: 成功处理 31 条天气数据
+2026-05-15 13:31:48,958 - INFO - 深圳 2023-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:49,132 - INFO - 深圳 2023-02: 成功处理 28 条天气数据
+2026-05-15 13:31:49,288 - INFO - 深圳 2023-02: 成功处理 28 条AQI数据
+2026-05-15 13:31:49,301 - INFO - 深圳 2023-03: 成功处理 31 条天气数据
+2026-05-15 13:31:49,906 - INFO - 深圳 2023-03: 成功处理 32 条AQI数据
+2026-05-15 13:31:50,130 - INFO - 深圳 2023-04: 成功处理 30 条天气数据
+2026-05-15 13:31:50,280 - INFO - 深圳 2023-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:50,327 - INFO - 深圳 2023-05: 成功处理 31 条天气数据
+2026-05-15 13:31:50,844 - INFO - 深圳 2023-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:51,142 - INFO - 深圳 2023-06: 成功处理 30 条天气数据
+2026-05-15 13:31:51,319 - INFO - 深圳 2023-07: 成功处理 31 条天气数据
+2026-05-15 13:31:51,345 - INFO - 深圳 2023-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:51,755 - INFO - 深圳 2023-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:52,118 - INFO - 深圳 2023-08: 成功处理 31 条天气数据
+2026-05-15 13:31:52,335 - INFO - 深圳 2023-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:52,336 - INFO - 深圳 2023-09: 成功处理 30 条天气数据
+2026-05-15 13:31:52,699 - INFO - 深圳 2023-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:53,076 - INFO - 深圳 2023-10: 成功处理 30 条天气数据
+2026-05-15 13:31:53,404 - INFO - 深圳 2023-11: 成功处理 30 条天气数据
+2026-05-15 13:31:53,417 - INFO - 深圳 2023-10: 成功处理 20 条AQI数据
+2026-05-15 13:31:53,669 - INFO - 深圳 2023-11: 成功处理 30 条AQI数据
+2026-05-15 13:31:54,296 - INFO - 深圳 2023-12: 成功处理 30 条天气数据
+2026-05-15 13:31:54,443 - INFO - 深圳 2023-12: 成功处理 31 条AQI数据
+2026-05-15 13:31:54,453 - INFO - 深圳 2024-01: 成功处理 31 条天气数据
+2026-05-15 13:31:54,578 - INFO - 深圳 2024-01: 成功处理 31 条AQI数据
+2026-05-15 13:31:55,239 - INFO - 深圳 2024-02: 成功处理 29 条天气数据
+2026-05-15 13:31:55,488 - INFO - 深圳 2024-03: 成功处理 31 条天气数据
+2026-05-15 13:31:55,551 - INFO - 深圳 2024-02: 成功处理 29 条AQI数据
+2026-05-15 13:31:55,612 - INFO - 深圳 2024-03: 成功处理 31 条AQI数据
+2026-05-15 13:31:56,129 - INFO - 深圳 2024-04: 成功处理 30 条天气数据
+2026-05-15 13:31:56,511 - INFO - 深圳 2024-04: 成功处理 30 条AQI数据
+2026-05-15 13:31:56,587 - INFO - 深圳 2024-05: 成功处理 31 条天气数据
+2026-05-15 13:31:56,655 - INFO - 深圳 2024-05: 成功处理 31 条AQI数据
+2026-05-15 13:31:56,990 - INFO - 深圳 2024-06: 成功处理 30 条天气数据
+2026-05-15 13:31:57,565 - INFO - 深圳 2024-07: 成功处理 31 条天气数据
+2026-05-15 13:31:57,574 - INFO - 深圳 2024-06: 成功处理 30 条AQI数据
+2026-05-15 13:31:57,695 - INFO - 深圳 2024-07: 成功处理 31 条AQI数据
+2026-05-15 13:31:57,853 - INFO - 深圳 2024-08: 成功处理 31 条天气数据
+2026-05-15 13:31:58,623 - INFO - 深圳 2024-09: 成功处理 30 条天气数据
+2026-05-15 13:31:58,640 - INFO - 深圳 2024-08: 成功处理 31 条AQI数据
+2026-05-15 13:31:58,733 - INFO - 深圳 2024-09: 成功处理 30 条AQI数据
+2026-05-15 13:31:58,848 - INFO - 深圳 2024-10: 成功处理 32 条天气数据
+2026-05-15 13:31:59,657 - INFO - 深圳 2024-11: 成功处理 30 条天气数据
+2026-05-15 13:31:59,693 - INFO - 深圳 2024-10: 成功处理 31 条AQI数据
+2026-05-15 13:31:59,824 - INFO - 深圳 2024-11: 成功处理 30 条AQI数据
+2026-05-15 13:32:00,331 - INFO - 深圳 2024-12: 成功处理 31 条天气数据
+2026-05-15 13:32:00,474 - INFO - 深圳 2024-12: 成功处理 31 条AQI数据
+2026-05-15 13:32:00,477 - INFO - 127.0.0.1 - - [15/May/2026 13:32:00] "GET /api/crawl HTTP/1.1" 200 -
+2026-05-15 13:32:03,933 - INFO - 127.0.0.1 - - [15/May/2026 13:32:03] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:32:03,953 - INFO - 127.0.0.1 - - [15/May/2026 13:32:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:32:04,586 - INFO - 127.0.0.1 - - [15/May/2026 13:32:04] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:32:04,604 - INFO - 127.0.0.1 - - [15/May/2026 13:32:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:33:32,524 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:33:32,524 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:33:32,526 - INFO -  * Restarting with stat
+2026-05-15 13:33:33,583 - WARNING -  * Debugger is active!
+2026-05-15 13:33:33,590 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:33:34,557 - INFO - 127.0.0.1 - - [15/May/2026 13:33:34] "GET / HTTP/1.1" 200 -
+2026-05-15 13:33:40,322 - INFO - 127.0.0.1 - - [15/May/2026 13:33:40] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:33:40,391 - INFO - 127.0.0.1 - - [15/May/2026 13:33:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:33:44,644 - INFO - 127.0.0.1 - - [15/May/2026 13:33:44] "[33mGET /crawl HTTP/1.1[0m" 404 -
+2026-05-15 13:33:49,124 - INFO - 127.0.0.1 - - [15/May/2026 13:33:49] "[33mGET /export HTTP/1.1[0m" 404 -
+2026-05-15 13:34:08,090 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:34:08,090 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:34:08,091 - INFO -  * Restarting with stat
+2026-05-15 13:34:09,135 - WARNING -  * Debugger is active!
+2026-05-15 13:34:09,142 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:34:09,367 - INFO - 127.0.0.1 - - [15/May/2026 13:34:09] "GET / HTTP/1.1" 200 -
+2026-05-15 13:34:09,445 - INFO - 127.0.0.1 - - [15/May/2026 13:34:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:34:14,273 - INFO - 127.0.0.1 - - [15/May/2026 13:34:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-15 13:34:14,281 - INFO - 127.0.0.1 - - [15/May/2026 13:34:14] "GET /login HTTP/1.1" 200 -
+2026-05-15 13:34:14,304 - INFO - 127.0.0.1 - - [15/May/2026 13:34:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:34:17,334 - INFO - 127.0.0.1 - - [15/May/2026 13:34:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-15 13:34:17,338 - INFO - 127.0.0.1 - - [15/May/2026 13:34:17] "GET / HTTP/1.1" 200 -
+2026-05-15 13:34:17,360 - INFO - 127.0.0.1 - - [15/May/2026 13:34:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:34:39,979 - INFO - 127.0.0.1 - - [15/May/2026 13:34:39] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:34:40,003 - INFO - 127.0.0.1 - - [15/May/2026 13:34:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:34:44,252 - INFO - 127.0.0.1 - - [15/May/2026 13:34:44] "GET / HTTP/1.1" 200 -
+2026-05-15 13:34:44,276 - INFO - 127.0.0.1 - - [15/May/2026 13:34:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:13,760 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:40:13,760 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:40:13,762 - INFO -  * Restarting with stat
+2026-05-15 13:40:14,919 - WARNING -  * Debugger is active!
+2026-05-15 13:40:14,927 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:40:16,065 - INFO - 127.0.0.1 - - [15/May/2026 13:40:16] "GET / HTTP/1.1" 200 -
+2026-05-15 13:40:16,140 - INFO - 127.0.0.1 - - [15/May/2026 13:40:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:20,040 - INFO - 127.0.0.1 - - [15/May/2026 13:40:20] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:40:20,062 - INFO - 127.0.0.1 - - [15/May/2026 13:40:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:24,536 - INFO - 127.0.0.1 - - [15/May/2026 13:40:24] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:40:24,556 - INFO - 127.0.0.1 - - [15/May/2026 13:40:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:25,231 - INFO - 127.0.0.1 - - [15/May/2026 13:40:25] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:40:25,246 - INFO - 127.0.0.1 - - [15/May/2026 13:40:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:26,648 - INFO - 127.0.0.1 - - [15/May/2026 13:40:26] "GET / HTTP/1.1" 200 -
+2026-05-15 13:40:26,675 - INFO - 127.0.0.1 - - [15/May/2026 13:40:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:27,735 - INFO - 127.0.0.1 - - [15/May/2026 13:40:27] "GET /analysis HTTP/1.1" 200 -
+2026-05-15 13:40:27,752 - INFO - 127.0.0.1 - - [15/May/2026 13:40:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:30,126 - INFO - 127.0.0.1 - - [15/May/2026 13:40:30] "GET / HTTP/1.1" 200 -
+2026-05-15 13:40:30,150 - INFO - 127.0.0.1 - - [15/May/2026 13:40:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:40:31,978 - INFO - 127.0.0.1 - - [15/May/2026 13:40:31] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:40:31,999 - INFO - 127.0.0.1 - - [15/May/2026 13:40:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:41:19,523 - INFO - 127.0.0.1 - - [15/May/2026 13:41:19] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:41:19,544 - INFO - 127.0.0.1 - - [15/May/2026 13:41:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:42:22,348 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:42:22,348 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:42:22,350 - INFO -  * Restarting with stat
+2026-05-15 13:42:23,388 - WARNING -  * Debugger is active!
+2026-05-15 13:42:23,395 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:42:26,817 - INFO - 127.0.0.1 - - [15/May/2026 13:42:26] "GET / HTTP/1.1" 200 -
+2026-05-15 13:42:26,885 - INFO - 127.0.0.1 - - [15/May/2026 13:42:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:42:29,964 - INFO - 127.0.0.1 - - [15/May/2026 13:42:29] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:42:29,986 - INFO - 127.0.0.1 - - [15/May/2026 13:42:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:42:32,110 - INFO - 127.0.0.1 - - [15/May/2026 13:42:32] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:42:32,126 - INFO - 127.0.0.1 - - [15/May/2026 13:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:42:34,560 - INFO - 127.0.0.1 - - [15/May/2026 13:42:34] "GET /analysis HTTP/1.1" 200 -
+2026-05-15 13:42:34,582 - INFO - 127.0.0.1 - - [15/May/2026 13:42:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:42:36,491 - INFO - 127.0.0.1 - - [15/May/2026 13:42:36] "GET /analysis HTTP/1.1" 200 -
+2026-05-15 13:42:36,507 - INFO - 127.0.0.1 - - [15/May/2026 13:42:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:42:38,110 - INFO - 127.0.0.1 - - [15/May/2026 13:42:38] "[33mGET /crawl HTTP/1.1[0m" 404 -
+2026-05-15 13:44:34,930 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:44:34,930 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:44:34,932 - INFO -  * Restarting with stat
+2026-05-15 13:44:35,956 - WARNING -  * Debugger is active!
+2026-05-15 13:44:35,963 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:44:37,778 - INFO - 127.0.0.1 - - [15/May/2026 13:44:37] "GET / HTTP/1.1" 200 -
+2026-05-15 13:44:37,845 - INFO - 127.0.0.1 - - [15/May/2026 13:44:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:44:39,515 - INFO - 127.0.0.1 - - [15/May/2026 13:44:39] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:44:39,535 - INFO - 127.0.0.1 - - [15/May/2026 13:44:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:45:27,073 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:45:27,073 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:45:27,074 - INFO -  * Restarting with stat
+2026-05-15 13:45:28,093 - WARNING -  * Debugger is active!
+2026-05-15 13:45:28,100 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:45:29,746 - INFO - 127.0.0.1 - - [15/May/2026 13:45:29] "GET / HTTP/1.1" 200 -
+2026-05-15 13:45:29,814 - INFO - 127.0.0.1 - - [15/May/2026 13:45:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:45:31,563 - INFO - 127.0.0.1 - - [15/May/2026 13:45:31] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:45:31,583 - INFO - 127.0.0.1 - - [15/May/2026 13:45:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:46:00,084 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2026-05-15 13:46:00,084 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-15 13:46:00,085 - INFO -  * Restarting with stat
+2026-05-15 13:46:01,115 - WARNING -  * Debugger is active!
+2026-05-15 13:46:01,122 - INFO -  * Debugger PIN: 179-538-115
+2026-05-15 13:46:01,708 - INFO - 127.0.0.1 - - [15/May/2026 13:46:01] "GET / HTTP/1.1" 200 -
+2026-05-15 13:46:01,777 - INFO - 127.0.0.1 - - [15/May/2026 13:46:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-15 13:46:03,036 - INFO - 127.0.0.1 - - [15/May/2026 13:46:03] "GET /data HTTP/1.1" 200 -
+2026-05-15 13:46:03,056 - INFO - 127.0.0.1 - - [15/May/2026 13:46:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-21 22:52:03,015 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-05-21 22:52:03,016 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-21 22:52:03,017 - INFO -  * Restarting with stat
+2026-05-21 22:52:04,849 - WARNING -  * Debugger is active!
+2026-05-21 22:52:04,856 - INFO -  * Debugger PIN: 179-538-115
+2026-05-21 22:52:05,125 - INFO - 127.0.0.1 - - [21/May/2026 22:52:05] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-21 22:52:05,137 - INFO - 127.0.0.1 - - [21/May/2026 22:52:05] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-21 22:52:05,250 - INFO - 127.0.0.1 - - [21/May/2026 22:52:05] "GET /static/style.css HTTP/1.1" 200 -
+2026-05-21 22:53:00,540 - INFO - 127.0.0.1 - - [21/May/2026 22:53:00] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-21 22:53:00,547 - INFO - 127.0.0.1 - - [21/May/2026 22:53:00] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-21 22:53:00,566 - INFO - 127.0.0.1 - - [21/May/2026 22:53:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-21 22:53:08,680 - INFO - 127.0.0.1 - - [21/May/2026 22:53:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-21 22:53:17,664 - INFO - 127.0.0.1 - - [21/May/2026 22:53:17] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-21 22:53:17,677 - INFO - 127.0.0.1 - - [21/May/2026 22:53:17] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-05-21 22:53:17,696 - INFO - 127.0.0.1 - - [21/May/2026 22:53:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-21 22:54:26,389 - INFO - 127.0.0.1 - - [21/May/2026 22:54:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-21 22:54:26,396 - INFO - 127.0.0.1 - - [21/May/2026 22:54:26] "GET / HTTP/1.1" 200 -
+2026-05-21 22:54:26,418 - INFO - 127.0.0.1 - - [21/May/2026 22:54:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-21 22:54:41,597 - INFO - 127.0.0.1 - - [21/May/2026 22:54:41] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-05-21 23:05:34,539 - INFO -  * Detected change in 'C:\\Users\\ZhuanZ（无密码）\\Desktop\\新毕业论文 - 副本(2)\\weather-project\\app.py', reloading
+2026-05-21 23:05:34,786 - INFO -  * Restarting with stat
+2026-06-01 00:18:02,311 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 00:18:02,548 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 00:18:02,548 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 00:18:05,676 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:05] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 00:18:05,689 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:05] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 00:18:05,819 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-01 00:18:08,526 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 00:18:08,532 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:08] "GET / HTTP/1.1" 200 -
+2026-06-01 00:18:08,605 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:08] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-01 00:18:09,628 - INFO - 127.0.0.1 - - [01/Jun/2026 00:18:09] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:33:50,610 - INFO - 127.0.0.1 - - [01/Jun/2026 00:33:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:33:50,632 - INFO - 127.0.0.1 - - [01/Jun/2026 00:33:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-01 00:38:38,656 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 00:38:38,877 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 00:38:38,877 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 00:38:54,252 - INFO - 127.0.0.1 - - [01/Jun/2026 00:38:54] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 00:38:54,262 - INFO - 127.0.0.1 - - [01/Jun/2026 00:38:54] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 00:38:55,737 - INFO - 127.0.0.1 - - [01/Jun/2026 00:38:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 00:38:55,743 - INFO - 127.0.0.1 - - [01/Jun/2026 00:38:55] "GET / HTTP/1.1" 200 -
+2026-06-01 00:38:55,814 - INFO - 127.0.0.1 - - [01/Jun/2026 00:38:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:38:55,854 - INFO - 127.0.0.1 - - [01/Jun/2026 00:38:55] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:39:37,285 - ERROR - Exception on /realtime [GET]
+Traceback (most recent call last):
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ZhuanZ（无密码）\Desktop\新毕业论文 - 副本(2)\weather-project\app.py", line 113, in decorated
+    return f(*args, **kwargs)
+  File "C:\Users\ZhuanZ（无密码）\Desktop\新毕业论文 - 副本(2)\weather-project\app.py", line 178, in realtime
+    return render_template('realtime.html',
+                           username=session.get('name', session.get('username')),
+                           role=session.get('role'))
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZhuanZ（无密码）\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: realtime.html
+2026-06-01 00:39:37,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:39:37] "[35m[1mGET /realtime HTTP/1.1[0m" 500 -
+2026-06-01 00:40:09,811 - INFO - 127.0.0.1 - - [01/Jun/2026 00:40:09] "GET /data HTTP/1.1" 200 -
+2026-06-01 00:40:09,835 - INFO - 127.0.0.1 - - [01/Jun/2026 00:40:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:40:09,860 - INFO - 127.0.0.1 - - [01/Jun/2026 00:40:09] "GET /api/weather_data?page=1&per_page=20&search=&city=&start_date=&end_date= HTTP/1.1" 200 -
+2026-06-01 00:40:24,295 - INFO - 127.0.0.1 - - [01/Jun/2026 00:40:24] "GET /api/weather_data?page=1&per_page=20&search=&city=上海&start_date=&end_date= HTTP/1.1" 200 -
+2026-06-01 00:40:28,651 - INFO - 127.0.0.1 - - [01/Jun/2026 00:40:28] "GET /api/weather_data?page=1&per_page=20&search=&city=上海&start_date=2026-06-03&end_date= HTTP/1.1" 200 -
+2026-06-01 00:40:37,080 - INFO - 127.0.0.1 - - [01/Jun/2026 00:40:37] "GET /api/weather_data?page=1&per_page=20&search=&city=上海&start_date=2024-01-03&end_date= HTTP/1.1" 200 -
+2026-06-01 00:41:32,340 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:32] "GET /realtime HTTP/1.1" 200 -
+2026-06-01 00:41:32,362 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:41:32,380 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:32] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:39,316 - INFO - 共生成 480 个爬取任务
+2026-06-01 00:41:39,317 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:39] "GET /api/crawl HTTP/1.1" 200 -
+2026-06-01 00:41:39,317 - INFO - 城市: 北京, 上海, 广州, 深圳
+2026-06-01 00:41:39,317 - INFO - 时间范围: 2020年 至 2024年
+2026-06-01 00:41:40,326 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:40] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:41,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:41] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:42,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:42] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:43,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:43] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:44,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:44] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:45,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:45] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:46,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:46] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:47,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:47] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:48,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:48] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:49,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:49] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:50,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:50] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:51,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:51] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:52,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:52] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:53,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:53] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:54,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:54] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:54,337 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-06-01 00:41:54,338 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-06-01 00:41:54,338 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-06-01 00:41:54,338 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-06-01 00:41:55,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:55] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:56,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:56] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:57,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:57] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:58,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:58] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:41:59,322 - INFO - 127.0.0.1 - - [01/Jun/2026 00:41:59] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:00,326 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:00] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:01,328 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:01] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:02,330 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:02] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:02,395 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:02] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:42:03,326 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:03] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:04,330 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:04] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:05,331 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:05] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:05,678 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:42:05,698 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:05] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-01 00:42:06,327 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:06] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:07,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:07] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:08,327 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:08] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:09,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:09] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:10,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:10] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:11,327 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:11] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:12,328 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:12] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:13,334 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:13] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:14,341 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-06-01 00:42:14,342 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-06-01 00:42:14,342 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-06-01 00:42:14,342 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-06-01 00:42:15,140 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:15] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:16,138 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:16] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:17,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:17] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:18,133 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:18] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:19,133 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:19] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:20,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:20] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:21,134 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:21] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:22,146 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:22] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:23,142 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:23] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:24,144 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:24] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:25,138 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:25] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:26,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:26] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:27,146 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:27] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:28,143 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:28] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:29,145 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:29] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:30,136 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:30] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:31,138 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:31] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:32,143 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:32] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:33,139 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:33] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:33,156 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:33] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:42:34,133 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:34] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:35,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:35] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:36,140 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:36] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:37,133 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:37] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:38,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:38] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:39,139 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:39] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:39,350 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202002.html
+2026-06-01 00:42:39,350 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202002.html
+2026-06-01 00:42:39,350 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202001.html
+2026-06-01 00:42:39,350 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202001.html
+2026-06-01 00:42:39,350 - ERROR - 北京 2020-02 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202002.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7991dbf0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:42:39,350 - ERROR - 北京 2020-02 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202002.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7991de10>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:42:39,351 - ERROR - 北京 2020-01 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202001.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7991ce20>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:42:39,351 - ERROR - 北京 2020-01 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202001.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7991d150>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:42:39,351 - WARNING - 任务失败: 北京 2020-02 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:42:39,352 - WARNING - 任务失败: 北京 2020-02 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:42:39,353 - WARNING - 任务失败: 北京 2020-01 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:42:39,353 - WARNING - 任务失败: 北京 2020-01 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:42:40,134 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:40] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:41,139 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:41] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:42,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:42] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:43,145 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:43] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:44,137 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:44] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:45,139 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:45] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:46,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:46] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:47,146 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:47] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:48,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:48] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:49,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:49] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:50,134 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:50] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:51,144 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:51] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:51,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:51] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:52,326 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:52] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:53,326 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:53] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:54,333 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:54] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:55,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:55] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:55,402 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-06-01 00:42:55,402 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-06-01 00:42:55,402 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-06-01 00:42:55,402 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-06-01 00:42:56,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:56] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:57,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:57] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:58,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:58] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:42:59,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:42:59] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:01,138 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:01] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:02,134 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:02] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:03,146 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:03] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:03,163 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:03] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:43:04,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:04] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:05,145 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:05] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:06,135 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:06] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:07,135 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:07] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:08,139 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:08] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:09,133 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:09] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:10,144 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:10] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:11,140 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:11] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:12,133 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:12] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:13,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:13] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:14,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:14] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:15,146 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:15] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:15,408 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-06-01 00:43:15,408 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-06-01 00:43:15,408 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-06-01 00:43:15,408 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-06-01 00:43:16,142 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:16] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:17,141 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:17] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:18,134 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:18] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:19,147 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:19] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:20,142 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:20] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:21,055 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:21] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:21,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:21] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:22,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:22] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:23,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:23] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:24,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:24] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:25,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:25] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:26,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:26] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:27,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:27] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:28,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:28] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:29,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:29] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:30,324 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:30] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:31,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:31] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:32,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:32] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:32,420 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:32] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:43:33,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:33] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:34,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:34] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:35,323 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:35] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:36,330 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:36] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:37,330 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:37] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:38,328 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:38] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:39,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:39] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:40,325 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:40] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:40,413 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202004.html
+2026-06-01 00:43:40,413 - ERROR - 北京 2020-04 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202004.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7991e8b0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:43:40,414 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202004.html
+2026-06-01 00:43:40,414 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202003.html
+2026-06-01 00:43:40,414 - WARNING - 任务失败: 北京 2020-04 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:43:40,414 - ERROR - 北京 2020-04 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202004.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba798338a0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:43:40,414 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202003.html
+2026-06-01 00:43:40,414 - ERROR - 北京 2020-03 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202003.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba79832f10>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:43:40,415 - ERROR - 北京 2020-03 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202003.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7991c380>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:43:40,415 - WARNING - 任务失败: 北京 2020-04 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:43:40,416 - WARNING - 任务失败: 北京 2020-03 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:43:40,417 - WARNING - 任务失败: 北京 2020-03 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:43:41,328 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:41] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:42,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:42] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:43,329 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:43] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:43,529 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:43] "GET /data HTTP/1.1" 200 -
+2026-06-01 00:43:43,558 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:43:43,595 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:43] "GET /api/weather_data?page=1&per_page=20&search=&city=&start_date=&end_date= HTTP/1.1" 200 -
+2026-06-01 00:43:44,554 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:43:44,576 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:43:44,622 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:43:44,623 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:43:44,625 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /static/charts/air_quality_category.png HTTP/1.1" 200 -
+2026-06-01 00:43:44,627 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /static/charts/city_aqi_distribution.png HTTP/1.1" 200 -
+2026-06-01 00:43:44,634 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /static/charts/correlation_heatmap.png HTTP/1.1" 200 -
+2026-06-01 00:43:44,640 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:43:44,651 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:43:44,667 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:44] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:43:47,083 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:47] "GET /realtime HTTP/1.1" 200 -
+2026-06-01 00:43:47,105 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:43:47,115 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:47] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 00:43:51,707 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:51] "GET / HTTP/1.1" 200 -
+2026-06-01 00:43:51,730 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:43:51,763 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:51] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:43:53,746 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:43:53,768 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:43:53,786 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-01 00:43:53,786 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-01 00:43:53,787 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-01 00:43:53,795 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:43:53,796 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:43:53,808 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:43:53,814 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:43:53,829 - INFO - 127.0.0.1 - - [01/Jun/2026 00:43:53] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:43:55,433 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202005.html
+2026-06-01 00:43:55,433 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202006.html
+2026-06-01 00:43:55,433 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202006.html
+2026-06-01 00:43:55,434 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202005.html
+2026-06-01 00:43:58,338 - INFO - 开始执行数据分析...
+2026-06-01 00:43:58,638 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,640 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,642 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,643 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,644 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,646 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,647 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:58,648 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,452 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,453 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,455 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,456 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,458 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,459 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,461 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,462 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,465 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,467 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,468 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,470 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,471 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,473 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,474 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:43:59,476 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:44:02,200 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-06-01 00:44:03,788 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:44:03,818 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:44:03,841 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /static/charts/air_quality_category.png HTTP/1.1" 200 -
+2026-06-01 00:44:03,841 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /static/charts/city_aqi_distribution.png HTTP/1.1" 200 -
+2026-06-01 00:44:03,842 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /static/charts/correlation_heatmap.png HTTP/1.1" 200 -
+2026-06-01 00:44:03,850 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:44:03,850 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:44:03,863 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:44:03,878 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:44:03,890 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:03] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:44:05,771 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:44:05,787 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:44:05,806 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-01 00:44:05,807 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-01 00:44:05,808 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-01 00:44:05,815 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:44:05,816 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:44:05,829 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:44:05,830 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:44:05,848 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:05] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:44:15,447 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202006.html
+2026-06-01 00:44:15,448 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202006.html
+2026-06-01 00:44:15,448 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202005.html
+2026-06-01 00:44:15,448 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202005.html
+2026-06-01 00:44:16,349 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:44:16,364 - INFO - 127.0.0.1 - - [01/Jun/2026 00:44:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-01 00:44:40,462 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202006.html
+2026-06-01 00:44:40,463 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202005.html
+2026-06-01 00:44:40,463 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202005.html
+2026-06-01 00:44:40,463 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202006.html
+2026-06-01 00:44:40,463 - ERROR - 北京 2020-06 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202006.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba798338a0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:44:40,463 - ERROR - 北京 2020-05 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202005.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7e62ff00>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:44:40,464 - ERROR - 北京 2020-05 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202005.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7e62f460>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:44:40,464 - ERROR - 北京 2020-06 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202006.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba7e62fac0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:44:40,464 - WARNING - 任务失败: 北京 2020-06 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:44:40,466 - WARNING - 任务失败: 北京 2020-05 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:44:40,466 - INFO - 进度: 2.1% (10/480)
+2026-06-01 00:44:40,467 - WARNING - 任务失败: 北京 2020-05 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:44:40,467 - WARNING - 任务失败: 北京 2020-06 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:44:55,480 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202008.html
+2026-06-01 00:44:55,480 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202008.html
+2026-06-01 00:44:55,480 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202007.html
+2026-06-01 00:44:55,480 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202007.html
+2026-06-01 00:45:15,488 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202007.html
+2026-06-01 00:45:15,489 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202008.html
+2026-06-01 00:45:15,489 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202007.html
+2026-06-01 00:45:15,489 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202008.html
+2026-06-01 00:45:40,508 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202007.html
+2026-06-01 00:45:40,508 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202008.html
+2026-06-01 00:45:40,508 - ERROR - 北京 2020-07 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202007.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01628380>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:45:40,508 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202008.html
+2026-06-01 00:45:40,508 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202007.html
+2026-06-01 00:45:40,509 - ERROR - 北京 2020-08 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202008.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01629590>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:45:40,509 - ERROR - 北京 2020-08 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202008.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01629480>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:45:40,509 - WARNING - 任务失败: 北京 2020-07 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:45:40,509 - ERROR - 北京 2020-07 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202007.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01629040>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:45:40,510 - WARNING - 任务失败: 北京 2020-08 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:45:40,511 - WARNING - 任务失败: 北京 2020-08 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:45:40,511 - WARNING - 任务失败: 北京 2020-07 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:45:55,528 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202010.html
+2026-06-01 00:45:55,528 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202010.html
+2026-06-01 00:45:55,529 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202009.html
+2026-06-01 00:45:55,529 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202009.html
+2026-06-01 00:46:15,546 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202010.html
+2026-06-01 00:46:15,546 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202010.html
+2026-06-01 00:46:15,546 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202009.html
+2026-06-01 00:46:15,546 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202009.html
+2026-06-01 00:46:40,560 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202009.html
+2026-06-01 00:46:40,561 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202009.html
+2026-06-01 00:46:40,561 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202010.html
+2026-06-01 00:46:40,561 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202010.html
+2026-06-01 00:46:40,561 - ERROR - 北京 2020-09 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202009.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba79833ce0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:46:40,561 - ERROR - 北京 2020-09 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202009.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162a580>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:46:40,561 - ERROR - 北京 2020-10 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202010.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162a7a0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:46:40,562 - ERROR - 北京 2020-10 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202010.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162a9c0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:46:40,562 - WARNING - 任务失败: 北京 2020-09 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:46:40,563 - WARNING - 任务失败: 北京 2020-09 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:46:40,564 - WARNING - 任务失败: 北京 2020-10 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:46:40,564 - WARNING - 任务失败: 北京 2020-10 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:46:40,565 - INFO - 进度: 4.2% (20/480)
+2026-06-01 00:46:55,577 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202011.html
+2026-06-01 00:46:55,578 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202012.html
+2026-06-01 00:46:55,578 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202012.html
+2026-06-01 00:46:55,578 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202011.html
+2026-06-01 00:47:15,591 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202012.html
+2026-06-01 00:47:15,592 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202011.html
+2026-06-01 00:47:15,592 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202011.html
+2026-06-01 00:47:15,592 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202012.html
+2026-06-01 00:47:40,598 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202012.html
+2026-06-01 00:47:40,598 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202012.html
+2026-06-01 00:47:40,598 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202011.html
+2026-06-01 00:47:40,598 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202011.html
+2026-06-01 00:47:40,598 - ERROR - 北京 2020-12 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202012.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01629150>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:47:40,599 - ERROR - 北京 2020-12 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202012.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162b460>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:47:40,599 - ERROR - 北京 2020-11 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202011.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162b240>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:47:40,599 - ERROR - 北京 2020-11 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202011.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba016286b0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:47:40,599 - WARNING - 任务失败: 北京 2020-12 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:47:40,600 - WARNING - 任务失败: 北京 2020-12 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:47:40,600 - WARNING - 任务失败: 北京 2020-11 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:47:40,601 - WARNING - 任务失败: 北京 2020-11 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:47:55,615 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202101.html
+2026-06-01 00:47:55,615 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202102.html
+2026-06-01 00:47:55,616 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202101.html
+2026-06-01 00:47:55,616 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202102.html
+2026-06-01 00:48:15,620 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202102.html
+2026-06-01 00:48:15,620 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202102.html
+2026-06-01 00:48:15,620 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202101.html
+2026-06-01 00:48:15,620 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202101.html
+2026-06-01 00:48:40,628 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202102.html
+2026-06-01 00:48:40,629 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202101.html
+2026-06-01 00:48:40,629 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202101.html
+2026-06-01 00:48:40,629 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202102.html
+2026-06-01 00:48:40,629 - ERROR - 北京 2021-02 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202102.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162b130>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:48:40,629 - ERROR - 北京 2021-01 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202101.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01628e20>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:48:40,629 - ERROR - 北京 2021-01 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202101.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba016285a0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:48:40,630 - ERROR - 北京 2021-02 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202102.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162af10>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:48:40,630 - WARNING - 任务失败: 北京 2021-02 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:48:40,631 - WARNING - 任务失败: 北京 2021-01 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:48:40,631 - WARNING - 任务失败: 北京 2021-01 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:48:40,631 - WARNING - 任务失败: 北京 2021-02 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:48:55,644 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202103.html
+2026-06-01 00:48:55,644 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202104.html
+2026-06-01 00:48:55,644 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202103.html
+2026-06-01 00:48:55,645 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202104.html
+2026-06-01 00:49:15,648 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202103.html
+2026-06-01 00:49:15,649 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202103.html
+2026-06-01 00:49:15,649 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202104.html
+2026-06-01 00:49:15,664 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202104.html
+2026-06-01 00:49:40,654 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202103.html
+2026-06-01 00:49:40,654 - ERROR - 北京 2021-03 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202103.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01555150>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:49:40,655 - WARNING - 任务失败: 北京 2021-03 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:49:40,655 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202104.html
+2026-06-01 00:49:40,655 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202103.html
+2026-06-01 00:49:40,656 - ERROR - 北京 2021-04 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202104.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01555370>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:49:40,656 - ERROR - 北京 2021-03 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202103.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01555260>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:49:40,656 - WARNING - 任务失败: 北京 2021-04 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:49:40,657 - INFO - 进度: 6.2% (30/480)
+2026-06-01 00:49:40,657 - WARNING - 任务失败: 北京 2021-03 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:49:40,670 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202104.html
+2026-06-01 00:49:40,670 - ERROR - 北京 2021-04 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202104.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01555480>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:49:40,670 - WARNING - 任务失败: 北京 2021-04 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:49:55,666 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202105.html
+2026-06-01 00:49:55,667 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202106.html
+2026-06-01 00:49:55,667 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202105.html
+2026-06-01 00:49:55,682 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202106.html
+2026-06-01 00:50:15,684 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202105.html
+2026-06-01 00:50:15,684 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202105.html
+2026-06-01 00:50:15,684 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202106.html
+2026-06-01 00:50:15,685 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202106.html
+2026-06-01 00:50:40,701 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202105.html
+2026-06-01 00:50:40,702 - ERROR - 北京 2021-05 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202105.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba015548d0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:50:40,702 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202106.html
+2026-06-01 00:50:40,702 - ERROR - 北京 2021-06 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202106.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01555ae0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:50:40,702 - WARNING - 任务失败: 北京 2021-05 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:50:40,703 - WARNING - 任务失败: 北京 2021-06 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:50:40,702 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202106.html
+2026-06-01 00:50:40,703 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202105.html
+2026-06-01 00:50:40,703 - ERROR - 北京 2021-06 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202106.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01555bf0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:50:40,704 - ERROR - 北京 2021-05 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202105.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba0162b680>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:50:40,704 - WARNING - 任务失败: 北京 2021-06 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:50:40,704 - WARNING - 任务失败: 北京 2021-05 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:50:55,726 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202107.html
+2026-06-01 00:50:55,726 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202107.html
+2026-06-01 00:50:55,726 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202108.html
+2026-06-01 00:50:55,726 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202108.html
+2026-06-01 00:51:15,731 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202108.html
+2026-06-01 00:51:15,731 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202107.html
+2026-06-01 00:51:15,731 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202107.html
+2026-06-01 00:51:15,731 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202108.html
+2026-06-01 00:51:40,746 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202107.html
+2026-06-01 00:51:40,746 - ERROR - 北京 2021-07 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202107.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01557020>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:51:40,746 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202107.html
+2026-06-01 00:51:40,746 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202108.html
+2026-06-01 00:51:40,747 - ERROR - 北京 2021-07 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202107.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01554380>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:51:40,747 - WARNING - 任务失败: 北京 2021-07 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:51:40,748 - WARNING - 任务失败: 北京 2021-07 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:51:40,748 - ERROR - 北京 2021-08 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202108.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01557460>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:51:40,747 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202108.html
+2026-06-01 00:51:40,749 - WARNING - 任务失败: 北京 2021-08 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:51:40,749 - ERROR - 北京 2021-08 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202108.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba015567a0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:51:40,750 - WARNING - 任务失败: 北京 2021-08 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:51:40,750 - INFO - 进度: 8.3% (40/480)
+2026-06-01 00:51:55,758 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202109.html
+2026-06-01 00:51:55,758 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202110.html
+2026-06-01 00:51:55,758 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/lishi/beijing/month/202110.html
+2026-06-01 00:51:55,759 - WARNING - 请求失败，第1次重试: http://www.tianqihoubao.com/aqi/beijing-202109.html
+2026-06-01 00:52:15,768 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202109.html
+2026-06-01 00:52:15,769 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/aqi/beijing-202110.html
+2026-06-01 00:52:15,769 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202109.html
+2026-06-01 00:52:15,769 - WARNING - 请求失败，第2次重试: http://www.tianqihoubao.com/lishi/beijing/month/202110.html
+2026-06-01 00:52:40,781 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202109.html
+2026-06-01 00:52:40,781 - ERROR - 北京 2021-09 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202109.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01554490>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:52:40,781 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/lishi/beijing/month/202110.html
+2026-06-01 00:52:40,781 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202110.html
+2026-06-01 00:52:40,782 - ERROR - 请求失败，已达最大重试次数: http://www.tianqihoubao.com/aqi/beijing-202109.html
+2026-06-01 00:52:40,782 - WARNING - 任务失败: 北京 2021-09 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:52:40,782 - ERROR - 北京 2021-10 天气爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beijing/month/202110.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba01554380>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:52:40,782 - ERROR - 北京 2021-10 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202110.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba015579b0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:52:40,783 - ERROR - 北京 2021-09 AQI爬取失败: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijing-202109.html (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tianqihoubao.com', port=80) at 0x1ba015578a0>, 'Connection to www.tianqihoubao.com timed out. (connect timeout=15)'))
+2026-06-01 00:52:40,783 - WARNING - 任务失败: 北京 2021-10 weather - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /lishi/beij
+2026-06-01 00:52:40,784 - WARNING - 任务失败: 北京 2021-10 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:52:40,784 - WARNING - 任务失败: 北京 2021-09 aqi - 错误: HTTPConnectionPool(host='www.tianqihoubao.com', port=80): Max retries exceeded with url: /aqi/beijin
+2026-06-01 00:55:33,733 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 00:55:33,956 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 00:55:33,956 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 00:55:37,705 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:37] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 00:55:37,715 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:37] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 00:55:38,935 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 00:55:38,942 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:38] "GET / HTTP/1.1" 200 -
+2026-06-01 00:55:39,014 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:55:39,055 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:39] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:55:42,020 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:55:42,042 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:55:42,082 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:55:42,083 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:55:42,085 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-01 00:55:42,086 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-01 00:55:42,098 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-01 00:55:42,099 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:55:42,115 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:55:42,128 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:42] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:55:45,453 - INFO - 开始执行数据分析...
+2026-06-01 00:55:45,724 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,726 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,728 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,729 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,730 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,732 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,733 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:45,735 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,454 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,456 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,458 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,459 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,461 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,462 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,463 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,464 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,468 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,469 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,471 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,472 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,473 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,475 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,476 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:46,478 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-06-01 00:55:49,009 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:49] "GET /api/analyze HTTP/1.1" 200 -
+2026-06-01 00:55:50,409 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:55:50,429 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:55:50,446 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /static/charts/air_quality_category.png HTTP/1.1" 200 -
+2026-06-01 00:55:50,447 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /static/charts/city_aqi_distribution.png HTTP/1.1" 200 -
+2026-06-01 00:55:50,447 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /static/charts/correlation_heatmap.png HTTP/1.1" 200 -
+2026-06-01 00:55:50,458 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:55:50,458 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:55:50,473 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:55:50,484 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:55:50,497 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:50] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:55:51,850 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:55:51,866 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:55:51,890 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-01 00:55:51,891 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-01 00:55:51,891 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-01 00:55:51,901 - ERROR - 获取趋势数据失败: unsupported format character 'Y' (0x59) at index 48
+2026-06-01 00:55:51,901 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:55:51,915 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:55:51,915 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:55:51,932 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:51] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:55:57,821 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:55:57,838 - INFO - 127.0.0.1 - - [01/Jun/2026 00:55:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-01 00:58:09,996 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 00:58:10,212 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 00:58:10,212 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 00:58:11,737 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:11] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 00:58:11,746 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:11] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 00:58:13,793 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 00:58:13,799 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:13] "GET / HTTP/1.1" 200 -
+2026-06-01 00:58:13,873 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:58:13,900 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:13] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 00:58:15,286 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 00:58:15,309 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 00:58:15,356 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-01 00:58:15,358 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-01 00:58:15,369 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:58:15,371 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-01 00:58:15,377 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:58:15,390 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:58:15,401 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:15] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 00:58:26,360 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:26] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:58:26,363 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:26] "GET /api/charts/trend?city=上海&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:58:26,377 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:26] "GET /api/charts/correlation?city=上海 HTTP/1.1" 200 -
+2026-06-01 00:58:26,382 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:26] "GET /api/aqi_data?city=上海&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:58:45,052 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:45] "GET /api/charts/trend?city=上海&metric=temp&period=month HTTP/1.1" 200 -
+2026-06-01 00:58:45,052 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:45] "GET /api/aqi_data?city=上海&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:58:45,056 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:45] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=temp HTTP/1.1" 200 -
+2026-06-01 00:58:45,071 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:45] "GET /api/charts/correlation?city=上海 HTTP/1.1" 200 -
+2026-06-01 00:58:47,028 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:47] "GET /api/aqi_data?city=上海&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:58:47,028 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:47] "GET /api/charts/trend?city=上海&metric=pollutant&period=month HTTP/1.1" 200 -
+2026-06-01 00:58:47,031 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:47] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=pollutant HTTP/1.1" 200 -
+2026-06-01 00:58:47,047 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:47] "GET /api/charts/correlation?city=上海 HTTP/1.1" 200 -
+2026-06-01 00:58:52,222 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:52] "GET /api/aqi_data?city=上海&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 00:58:52,224 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:52] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 00:58:52,226 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:52] "GET /api/charts/trend?city=上海&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 00:58:52,241 - INFO - 127.0.0.1 - - [01/Jun/2026 00:58:52] "GET /api/charts/correlation?city=上海 HTTP/1.1" 200 -
+2026-06-01 11:19:14,196 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 11:19:14,431 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 11:19:14,431 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 11:19:35,193 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:35] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 11:19:35,203 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:35] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 11:19:35,318 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-01 11:19:36,862 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 11:19:36,869 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:36] "GET / HTTP/1.1" 200 -
+2026-06-01 11:19:36,942 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:19:36,970 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:36] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 11:19:44,599 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:44] "GET /data HTTP/1.1" 200 -
+2026-06-01 11:19:44,619 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:19:44,638 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:44] "GET /api/weather_data?page=1&per_page=20&search=&city=&start_date=&end_date= HTTP/1.1" 200 -
+2026-06-01 11:19:48,033 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "GET /analysis HTTP/1.1" 200 -
+2026-06-01 11:19:48,053 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:19:48,091 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-01 11:19:48,091 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-01 11:19:48,095 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-01 11:19:48,106 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-01 11:19:48,106 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-01 11:19:48,114 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-01 11:19:48,132 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:48] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-01 11:19:49,580 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:49] "GET /realtime HTTP/1.1" 200 -
+2026-06-01 11:19:49,602 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:19:49,623 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:49] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-01 11:19:59,558 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:59] "GET / HTTP/1.1" 200 -
+2026-06-01 11:19:59,579 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:19:59,629 - INFO - 127.0.0.1 - - [01/Jun/2026 11:19:59] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 11:23:05,761 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 11:23:05,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 11:23:05,967 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 11:23:37,817 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:37] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 11:23:37,835 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:37] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 11:23:39,144 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 11:23:39,151 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:39] "GET / HTTP/1.1" 200 -
+2026-06-01 11:23:39,222 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:23:39,249 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:39] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 11:23:41,573 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:41] "GET /forecast HTTP/1.1" 200 -
+2026-06-01 11:23:41,594 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:23:43,057 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:43] "GET /api/weather/forecast?city=北京 HTTP/1.1" 200 -
+2026-06-01 11:23:55,302 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:55] "GET /api/weather/forecast?city=上海 HTTP/1.1" 200 -
+2026-06-01 11:23:57,218 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:57] "GET /air_map HTTP/1.1" 200 -
+2026-06-01 11:23:57,240 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:23:58,371 - ERROR - 获取地图数据失败: (1267, "Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='")
+2026-06-01 11:23:58,371 - INFO - 127.0.0.1 - - [01/Jun/2026 11:23:58] "GET /api/aqi/latest HTTP/1.1" 200 -
+2026-06-01 11:27:48,716 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 11:27:48,919 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 11:27:48,919 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 11:29:15,292 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:15] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 11:29:15,301 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:15] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 11:29:16,597 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 11:29:16,603 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:16] "GET / HTTP/1.1" 200 -
+2026-06-01 11:29:16,673 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:29:16,726 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:16] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 11:29:18,097 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:18] "GET /air_map HTTP/1.1" 200 -
+2026-06-01 11:29:18,117 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:29:19,051 - ERROR - 获取地图数据失败: (1267, "Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='")
+2026-06-01 11:29:19,052 - INFO - 127.0.0.1 - - [01/Jun/2026 11:29:19] "GET /api/aqi/latest HTTP/1.1" 200 -
+2026-06-01 11:30:12,807 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 11:30:13,038 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 11:30:13,038 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 11:30:14,458 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:14] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 11:30:14,467 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:14] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 11:30:16,414 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 11:30:16,420 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:16] "GET / HTTP/1.1" 200 -
+2026-06-01 11:30:16,490 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:30:16,517 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:16] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 11:30:18,116 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:18] "GET /air_map HTTP/1.1" 200 -
+2026-06-01 11:30:18,136 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:30:22,160 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:22] "GET /api/aqi/latest HTTP/1.1" 200 -
+2026-06-01 11:30:35,406 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:30:35,436 - INFO - 127.0.0.1 - - [01/Jun/2026 11:30:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-01 11:33:02,034 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 11:33:02,237 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.17.57:5000
+2026-06-01 11:33:02,237 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 11:34:20,359 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:20] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 11:34:20,368 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:20] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 11:34:22,872 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 11:34:22,878 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:22] "GET / HTTP/1.1" 200 -
+2026-06-01 11:34:22,948 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:34:22,973 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:22] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-01 11:34:24,534 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:24] "GET /air_map HTTP/1.1" 200 -
+2026-06-01 11:34:24,555 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:34:27,952 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:27] "GET /api/aqi/latest HTTP/1.1" 200 -
+2026-06-01 11:34:48,653 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-01 11:34:48,679 - INFO - 127.0.0.1 - - [01/Jun/2026 11:34:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-01 13:19:28,724 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-01 13:19:29,040 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-06-01 13:19:29,040 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-01 13:19:33,857 - INFO - 127.0.0.1 - - [01/Jun/2026 13:19:33] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 13:19:33,873 - INFO - 127.0.0.1 - - [01/Jun/2026 13:19:33] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-01 13:19:44,395 - INFO - 127.0.0.1 - - [01/Jun/2026 13:19:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-01 13:19:47,249 - INFO - 127.0.0.1 - - [01/Jun/2026 13:19:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-01 13:19:47,256 - INFO - 127.0.0.1 - - [01/Jun/2026 13:19:47] "GET / HTTP/1.1" 200 -
+2026-06-01 13:19:47,328 - INFO - 127.0.0.1 - - [01/Jun/2026 13:19:47] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-03 21:34:19,355 - INFO - 127.0.0.1 - - [03/Jun/2026 21:34:19] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-03 21:35:02,011 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:02] "GET /air_map HTTP/1.1" 200 -
+2026-06-03 21:35:02,045 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-03 21:35:07,357 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:07] "GET /api/aqi/latest HTTP/1.1" 200 -
+2026-06-03 21:35:17,114 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:17] "GET /data HTTP/1.1" 200 -
+2026-06-03 21:35:17,137 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-03 21:35:17,163 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:17] "GET /api/weather_data?page=1&per_page=20&search=&city=&start_date=&end_date= HTTP/1.1" 200 -
+2026-06-03 21:35:18,546 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /analysis HTTP/1.1" 200 -
+2026-06-03 21:35:18,569 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-03 21:35:18,608 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /static/charts/air_quality_category.png HTTP/1.1" 200 -
+2026-06-03 21:35:18,609 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /static/charts/city_aqi_distribution.png HTTP/1.1" 200 -
+2026-06-03 21:35:18,609 - ERROR - 获取相关性数据失败: (1267, "Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='")
+2026-06-03 21:35:18,609 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-03 21:35:18,613 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-03 21:35:18,620 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-03 21:35:18,621 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-03 21:35:18,624 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:18] "GET /static/charts/correlation_heatmap.png HTTP/1.1" 200 -
+2026-06-03 21:35:20,242 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:20] "GET /realtime HTTP/1.1" 200 -
+2026-06-03 21:35:20,265 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-03 21:35:20,274 - INFO - 127.0.0.1 - - [03/Jun/2026 21:35:20] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-11 16:53:42,589 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-11 16:53:42,805 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-06-11 16:53:42,805 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-11 16:53:45,330 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:45] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-11 16:53:45,361 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:45] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-11 16:53:45,801 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-11 16:53:48,004 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-11 16:53:48,010 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:48] "GET / HTTP/1.1" 200 -
+2026-06-11 16:53:48,085 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 16:53:48,116 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:48] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-11 16:53:50,542 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:50] "GET /forecast HTTP/1.1" 200 -
+2026-06-11 16:53:50,564 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 16:53:51,310 - INFO - 127.0.0.1 - - [11/Jun/2026 16:53:51] "GET /api/weather/forecast?city=北京 HTTP/1.1" 200 -
+2026-06-11 16:54:10,994 - INFO - 127.0.0.1 - - [11/Jun/2026 16:54:10] "GET /air_map HTTP/1.1" 200 -
+2026-06-11 16:54:11,015 - INFO - 127.0.0.1 - - [11/Jun/2026 16:54:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 16:54:14,788 - INFO - 127.0.0.1 - - [11/Jun/2026 16:54:14] "GET /api/aqi/latest HTTP/1.1" 200 -
+2026-06-11 17:01:17,879 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-11 17:01:18,085 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-06-11 17:01:18,086 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-11 17:01:19,678 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:19] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-11 17:01:19,690 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:19] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -
+2026-06-11 17:01:23,981 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-11 17:01:23,988 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:23] "GET / HTTP/1.1" 200 -
+2026-06-11 17:01:24,061 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 17:01:24,092 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:24] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-11 17:01:26,305 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:26] "GET /realtime HTTP/1.1" 200 -
+2026-06-11 17:01:26,325 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 17:01:26,343 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:26] "GET /api/crawl_progress HTTP/1.1" 200 -
+2026-06-11 17:01:27,788 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "GET /analysis HTTP/1.1" 200 -
+2026-06-11 17:01:27,809 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 17:01:27,847 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "[36mGET /static/charts/air_quality_category.png HTTP/1.1[0m" 304 -
+2026-06-11 17:01:27,849 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "[36mGET /static/charts/city_aqi_distribution.png HTTP/1.1[0m" 304 -
+2026-06-11 17:01:27,849 - ERROR - 获取相关性数据失败: (1267, "Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='")
+2026-06-11 17:01:27,850 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "GET /api/charts/correlation?city=北京 HTTP/1.1" 200 -
+2026-06-11 17:01:27,859 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "[36mGET /static/charts/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-06-11 17:01:27,860 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "GET /api/statistics/city_comparison?cities=北京,上海,广州,深圳&metric=aqi HTTP/1.1" 200 -
+2026-06-11 17:01:27,860 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "GET /api/charts/trend?city=北京&metric=aqi&period=month HTTP/1.1" 200 -
+2026-06-11 17:01:27,866 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:27] "GET /api/aqi_data?city=北京&per_page=1000 HTTP/1.1" 200 -
+2026-06-11 17:01:28,684 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:28] "GET /data HTTP/1.1" 200 -
+2026-06-11 17:01:28,705 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 17:01:28,725 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:28] "GET /api/weather_data?page=1&per_page=20&search=&city=&start_date=&end_date= HTTP/1.1" 200 -
+2026-06-11 17:01:29,323 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:29] "GET / HTTP/1.1" 200 -
+2026-06-11 17:01:29,342 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-11 17:01:29,376 - INFO - 127.0.0.1 - - [11/Jun/2026 17:01:29] "GET /api/statistics/overview HTTP/1.1" 200 -
+2026-06-11 17:21:38,899 - INFO - 字体配置完成，使用字体: SimHei
+2026-06-11 17:21:39,115 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-06-11 17:21:39,115 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-11 17:21:44,407 - INFO - 127.0.0.1 - - [11/Jun/2026 17:21:44] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-11 17:21:44,418 - INFO - 127.0.0.1 - - [11/Jun/2026 17:21:44] "GET /login?next=http://127.0.0.1:5000/ HTTP/1.1" 200 -

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 天气数据爬取分析系统</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .login-container {
+            max-width: 440px;
+            width: 100%;
+            background: rgba(255,255,255,0.98);
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            overflow: hidden;
+        }
+        .login-header {
+            background: linear-gradient(120deg, #4a90e2, #8e44ad);
+            padding: 40px 24px;
+            text-align: center;
+        }
+        .login-header i { font-size: 56px; color: white; margin-bottom: 16px; }
+        .login-header h2 { color: white; font-size: 26px; font-weight: 600; }
+        .login-header p { color: rgba(255,255,255,0.85); font-size: 14px; margin-top: 8px; }
+        .login-form { padding: 32px 28px 28px; }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #1e293b; margin-bottom: 8px; }
+        .form-group label i { color: #4a90e2; }
+        .form-group input {
+            width: 100%; padding: 12px 16px; border: 1.5px solid #e2e8f0;
+            border-radius: 20px; font-size: 15px; background: #f8fafc;
+            transition: all 0.2s;
+        }
+        .form-group input:focus { outline: none; border-color: #4a90e2; background: white; box-shadow: 0 0 0 3px rgba(74,144,226,0.1); }
+        .login-btn {
+            width: 100%; padding: 12px; background: linear-gradient(90deg, #4a90e2, #8e44ad);
+            color: white; border: none; border-radius: 40px; font-size: 16px; font-weight: 600;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .login-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(74,144,226,0.3); }
+        .demo-info {
+            margin-top: 28px; padding-top: 20px; border-top: 1px solid #edf2f7;
+            text-align: center; font-size: 13px; color: #64748b;
+            display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;
+        }
+        .demo-badge { background: #eef2ff; padding: 6px 14px; border-radius: 40px; font-family: monospace; font-size: 12px; color: #4a90e2; }
+        .error-msg { background: #fee2e2; color: #dc2626; padding: 12px; border-radius: 20px; font-size: 13px; margin-top: 16px; text-align: center; }
+        .features-list { display: flex; gap: 16px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+        .feature-tag { display: flex; align-items: center; gap: 6px; font-size: 12px; color: rgba(255,255,255,0.8); }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <h2>天气数据爬取分析系统</h2>
+            <p>历史天气 · 空气质量 · 智能分析</p>
+            <div class="features-list">
+                <span class="feature-tag"><i class="fas fa-check"></i> 实时爬取</span>
+                <span class="feature-tag"><i class="fas fa-check"></i> 数据可视化</span>
+                <span class="feature-tag"><i class="fas fa-check"></i> 智能分析</span>
+            </div>
+        </div>
+        <div class="login-form">
+            <form method="POST" action="/login">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> 用户名</label>
+                    <input type="text" name="username" placeholder="请输入用户名" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> 密码</label>
+                    <input type="password" name="password" placeholder="请输入密码" required>
+                </div>
+                <button type="submit" class="login-btn"><i class="fas fa-sign-in-alt"></i> 登录系统</button>
+                {% if error %}
+                <div class="error-msg"><i class="fas fa-exclamation-circle"></i> {{ error }}</div>
+                {% endif %}
+            </form>
+            <div class="demo-info">
+                <span><i class="fas fa-flask"></i> 体验账号</span>
+                <span class="demo-badge">admin / 123456</span>
+                <span class="demo-badge">test / test123</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

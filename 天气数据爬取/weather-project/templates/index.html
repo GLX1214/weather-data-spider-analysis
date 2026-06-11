@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仪表盘 - 天气数据平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-cloud-sun"></i><span>天气数据平台</span></div>
+        <div class="nav-menu">
+            <a href="/"><i class="fas fa-home"></i> 首页</a>
+            <a href="/data"><i class="fas fa-database"></i> 数据管理</a>
+            <a href="/analysis"><i class="fas fa-chart-line"></i> 数据分析</a>
+            <a href="/realtime"><i class="fas fa-satellite-dish"></i> 实时监控</a>
+        </div>
+        <div class="nav-user">
+            <span class="role-badge">{{ role }}</span>
+            <span class="username">{{ username }}</span>
+            <a href="/logout" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </nav>
+
+    <div class="container dashboard">
+        <div class="stats-row">
+            <div class="stat-card primary"><div class="stat-icon"><i class="fas fa-sun"></i></div><div class="stat-info"><h3 id="weather-count">-</h3><p>天气数据总量</p></div></div>
+            <div class="stat-card success"><div class="stat-icon"><i class="fas fa-wind"></i></div><div class="stat-info"><h3 id="aqi-count">-</h3><p>AQI数据总量</p></div></div>
+            <div class="stat-card warning"><div class="stat-icon"><i class="fas fa-city"></i></div><div class="stat-info"><h3 id="city-count">-</h3><p>覆盖城市</p></div></div>
+            <div class="stat-card danger"><div class="stat-icon"><i class="fas fa-thermometer-half"></i></div><div class="stat-info"><h3 id="avg-temp">-°C</h3><p>平均最高温度</p></div></div>
+        </div>
+
+        <div class="charts-row">
+            <div class="chart-panel"><div class="panel-header"><h3><i class="fas fa-chart-area"></i> 近7天数据趋势</h3></div><div id="trendChart" style="height: 300px;"></div></div>
+            <div class="chart-panel"><div class="panel-header"><h3><i class="fas fa-chart-pie"></i> AQI质量分布</h3></div><div id="aqiPieChart" style="height: 300px;"></div></div>
+        </div>
+
+        <div class="charts-row">
+            <div class="chart-panel"><div class="panel-header"><h3><i class="fas fa-map-marker-alt"></i> 城市数据分布</h3></div><div id="cityBarChart" style="height: 280px;"></div></div>
+            <div class="quick-actions-panel"><h3><i class="fas fa-bolt"></i> 快捷操作</h3><div class="action-grid"><a href="/data" class="action-card"><i class="fas fa-cloud-download-alt"></i><span>爬取数据</span></a><a href="/analysis" class="action-card"><i class="fas fa-chart-bar"></i><span>生成图表</span></a><a href="/data" class="action-card"><i class="fas fa-file-export"></i><span>导出数据</span></a><a href="/realtime" class="action-card"><i class="fas fa-eye"></i><span>实时监控</span></a></div></div>
+        </div>
+    </div>
+
+    <script>
+        async function loadStats() {
+            try {
+                const res = await fetch('/api/statistics/overview');
+                const data = await res.json();
+                if (data.success) {
+                    document.getElementById('weather-count').textContent = data.weather_count.toLocaleString();
+                    document.getElementById('aqi-count').textContent = data.aqi_count.toLocaleString();
+                    document.getElementById('city-count').textContent = data.city_distribution.length;
+
+                    // 安全处理平均温度，避免 .toFixed 报错
+                    let avgMax = data.temp_stats?.avg_max;
+                    if (avgMax === undefined || avgMax === null || isNaN(avgMax)) {
+                        avgMax = 0;
+                    } else {
+                        avgMax = parseFloat(avgMax);
+                    }
+                    document.getElementById('avg-temp').textContent = avgMax.toFixed(1) + '°C';
+
+                    renderTrendChart(data.recent_trend);
+                    renderAqiPieChart(data.aqi_distribution);
+                    renderCityBarChart(data.city_distribution);
+                }
+            } catch(e) { console.error('加载统计数据失败:', e); }
+        }
+
+        function renderTrendChart(data) {
+            const chartDom = document.getElementById('trendChart');
+            if (!chartDom) return;
+            if (!data || data.length === 0) {
+                console.warn('无趋势数据');
+                // 可选：显示空状态
+                chartDom.innerHTML = '<div style="text-align:center;padding-top:120px;color:#999;">暂无数据</div>';
+                return;
+            }
+            const chart = echarts.init(chartDom);
+            chart.setOption({
+                tooltip: { trigger: 'axis' },
+                xAxis: { type: 'category', data: data.map(d => d.day), axisLabel: { rotate: 30 } },
+                yAxis: { type: 'value' },
+                series: [{ data: data.map(d => d.count), type: 'line', smooth: true, areaStyle: { color: 'rgba(74,144,226,0.2)' }, itemStyle: { color: '#4a90e2' } }]
+            });
+        }
+
+        function renderAqiPieChart(data) {
+            const chartDom = document.getElementById('aqiPieChart');
+            if (!chartDom) return;
+            if (!data || data.length === 0) {
+                chartDom.innerHTML = '<div style="text-align:center;padding-top:120px;color:#999;">暂无数据</div>';
+                return;
+            }
+            const chart = echarts.init(chartDom);
+            const colors = ['#00e400','#ffff00','#ff7e00','#ff0000','#99004c','#7e0023'];
+            chart.setOption({
+                tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+                legend: { orient: 'vertical', right: 10, top: 'center' },
+                series: [{ type: 'pie', radius: ['40%','70%'], data: data.map((d,i) => ({ value: d.count, name: d.aqi_quality_grade, itemStyle: { color: colors[i%colors.length] } })) }]
+            });
+        }
+
+        function renderCityBarChart(data) {
+            const chartDom = document.getElementById('cityBarChart');
+            if (!chartDom) return;
+            if (!data || data.length === 0) {
+                chartDom.innerHTML = '<div style="text-align:center;padding-top:120px;color:#999;">暂无数据</div>';
+                return;
+            }
+            const chart = echarts.init(chartDom);
+            chart.setOption({
+                tooltip: { trigger: 'axis' },
+                xAxis: { type: 'category', data: data.map(d => d.city_name) },
+                yAxis: { type: 'value' },
+                series: [{ data: data.map(d => d.count), type: 'bar', itemStyle: { color: '#667eea' }, borderRadius: [8,8,0,0] }]
+            });
+        }
+
+        loadStats();
+        window.addEventListener('resize', () => {
+            [echarts.getInstanceByDom(document.getElementById('trendChart')),
+             echarts.getInstanceByDom(document.getElementById('aqiPieChart')),
+             echarts.getInstanceByDom(document.getElementById('cityBarChart'))].forEach(c => c?.resize());
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>实时监控 - 天气数据平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-cloud-sun"></i><span>天气数据平台</span></div>
+        <div class="nav-menu"><a href="/"><i class="fas fa-home"></i> 首页</a><a href="/data"><i class="fas fa-database"></i> 数据管理</a><a href="/analysis"><i class="fas fa-chart-line"></i> 数据分析</a><a href="/realtime" class="active"><i class="fas fa-satellite-dish"></i> 实时监控</a></div>
+        <div class="nav-user"><span class="role-badge">{{ role }}</span><span class="username">{{ username }}</span><a href="/logout" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a></div>
+    </nav>
+    <div class="container">
+        <div class="page-header"><h2><i class="fas fa-satellite-dish"></i> 实时监控中心</h2><div class="status-indicator"><span class="status-dot online"></span><span>系统正常</span></div></div>
+        <div class="realtime-grid">
+            <div class="monitor-card"><div class="card-header"><h3><i class="fas fa-spider"></i> 爬虫进度</h3><span class="badge" id="crawlStatus">空闲</span></div><div class="progress-ring-wrapper"><svg class="progress-ring" width="120" height="120"><circle class="progress-ring-bg" cx="60" cy="60" r="54"/><circle class="progress-ring-fill" id="progressCircle" cx="60" cy="60" r="54"/></svg><div class="progress-text" id="progressText">0%</div></div><div class="progress-info"><p id="currentTask">当前任务: 无</p><p id="crawlMessage">等待启动...</p></div><button onclick="startCrawl()" class="btn btn-success" id="startCrawlBtn"><i class="fas fa-play"></i> 启动爬虫</button></div>
+            <div class="monitor-card large"><div class="card-header"><h3><i class="fas fa-terminal"></i> 实时日志</h3><div class="log-controls"><button onclick="clearLogs()" class="btn-icon"><i class="fas fa-trash"></i></button><button onclick="toggleAutoScroll()" class="btn-icon active" id="autoScrollBtn"><i class="fas fa-lock"></i></button></div></div><div class="log-container" id="logContainer"><div class="log-line info"><span class="log-time">[系统]</span><span class="log-msg">实时监控已启动，等待任务...</span></div></div></div>
+            <div class="monitor-card"><div class="card-header"><h3><i class="fas fa-server"></i> 系统状态</h3></div><div class="resource-bars"><div class="resource-item"><label>数据库连接</label><div class="resource-bar"><div class="resource-fill" style="width:100%; background:#67c23a;"></div></div><span>正常</span></div><div class="resource-item"><label>数据表</label><div class="resource-bar"><div class="resource-fill" style="width:100%; background:#67c23a;"></div></div><span>已创建</span></div><div class="resource-item"><label>静态图表</label><div class="resource-bar"><div class="resource-fill" id="chartBar" style="width:0%; background:#e6a23c;"></div></div><span id="chartCount">0 个</span></div></div></div>
+            <div class="monitor-card"><div class="card-header"><h3><i class="fas fa-history"></i> 最近活动</h3></div><ul class="activity-list" id="activityList"><li class="activity-item"><i class="fas fa-info-circle"></i><span>系统初始化完成</span><small>刚刚</small></li></ul></div>
+        </div>
+    </div>
+    <script>
+        let autoScroll=true, progressInterval=null;
+        function startCrawl(){ fetch('/api/crawl').then(r=>r.json()).then(d=>{ addLog('爬虫任务已启动','success'); document.getElementById('startCrawlBtn').disabled=true; document.getElementById('startCrawlBtn').innerHTML='<i class="fas fa-spinner fa-spin"></i> 运行中...'; if(progressInterval) clearInterval(progressInterval); progressInterval=setInterval(checkProgress,1000); }); }
+        function checkProgress(){ fetch('/api/crawl_progress').then(r=>r.json()).then(data=>{ const progress=data.progress||0; const circumference=2*Math.PI*54; const offset=circumference-(progress/100)*circumference; document.getElementById('progressCircle').style.strokeDashoffset=offset; document.getElementById('progressText').textContent=progress+'%'; document.getElementById('crawlStatus').textContent=data.status==='running'?'运行中':data.status==='completed'?'已完成':data.status==='error'?'错误':'空闲'; document.getElementById('crawlStatus').className='badge '+data.status; document.getElementById('currentTask').textContent='当前任务: '+(data.current_task||'无'); document.getElementById('crawlMessage').textContent=data.message||''; if(data.status==='completed'||data.status==='error'){ clearInterval(progressInterval); document.getElementById('startCrawlBtn').disabled=false; document.getElementById('startCrawlBtn').innerHTML='<i class="fas fa-play"></i> 启动爬虫'; addLog(data.message,data.status==='completed'?'success':'error'); } }); }
+        function addLog(msg,type='info'){ const container=document.getElementById('logContainer'); const time=new Date().toLocaleTimeString(); const line=document.createElement('div'); line.className=`log-line ${type}`; line.innerHTML=`<span class="log-time">[${time}]</span> <span class="log-msg">${msg}</span>`; container.appendChild(line); if(autoScroll) container.scrollTop=container.scrollHeight; while(container.children.length>500) container.removeChild(container.firstChild); }
+        function clearLogs(){ document.getElementById('logContainer').innerHTML=''; }
+        function toggleAutoScroll(){ autoScroll=!autoScroll; document.getElementById('autoScrollBtn').classList.toggle('active',autoScroll); }
+        checkProgress();
+        setInterval(()=>{ fetch('/api/statistics/overview').then(r=>r.json()).then(d=>{ if(d.success){ const cnt=d.aqi_distribution?.length||0; document.getElementById('chartCount').textContent=cnt+' 个'; document.getElementById('chartBar').style.width=Math.min(cnt*14,100)+'%'; } }); },30000);
+    </script>
+</body>
+</html>

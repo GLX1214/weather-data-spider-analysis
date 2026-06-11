@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数据管理 - 天气数据平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-cloud-sun"></i><span>天气数据平台</span></div>
+        <div class="nav-menu">
+            <a href="/"><i class="fas fa-home"></i> 首页</a>
+            <a href="/data" class="active"><i class="fas fa-database"></i> 数据管理</a>
+            <a href="/analysis"><i class="fas fa-chart-line"></i> 数据分析</a>
+            <a href="/realtime"><i class="fas fa-satellite-dish"></i> 实时监控</a>
+        </div>
+        <div class="nav-user"><span class="role-badge">{{ role }}</span><span class="username">{{ username }}</span><a href="/logout" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a></div>
+    </nav>
+    <div class="container">
+        <div class="page-header"><h2><i class="fas fa-database"></i> 数据管理中心</h2></div>
+        <div class="action-panel">
+            <div class="btn-group">
+                <button onclick="initDB()" class="btn btn-primary"><i class="fas fa-plus-circle"></i> 初始化数据库</button>
+                <button onclick="crawlData()" class="btn btn-success"><i class="fas fa-cloud-download-alt"></i> 开始爬取</button>
+                <button onclick="exportData()" class="btn btn-secondary"><i class="fas fa-file-csv"></i> 导出CSV</button>
+                {% if role == 'admin' %}<button onclick="clearDB()" class="btn btn-danger"><i class="fas fa-trash-alt"></i> 清空数据库</button>{% endif %}
+            </div>
+            <div class="filter-group">
+                <select id="dataType" onchange="switchDataType()"><option value="weather">天气数据</option><option value="aqi">AQI数据</option></select>
+                <input type="text" id="searchInput" placeholder="搜索..." onkeyup="debounceSearch()">
+                <select id="cityFilter" onchange="loadData()"><option value="">全部城市</option></select>
+                <input type="date" id="startDate" onchange="loadData()"><input type="date" id="endDate" onchange="loadData()">
+                <button onclick="resetFilters()" class="btn btn-text"><i class="fas fa-undo"></i> 重置</button>
+            </div>
+        </div>
+        <div class="data-table-wrapper">
+            <div class="table-toolbar">
+                <div class="batch-actions"><label class="checkbox-wrapper"><input type="checkbox" id="selectAll" onchange="toggleSelectAll()"><span>全选</span></label><button onclick="batchDelete()" class="btn btn-danger btn-sm" id="batchDeleteBtn" disabled><i class="fas fa-trash"></i> 批量删除</button><span class="selected-count" id="selectedCount"></span></div>
+                <div class="pagination-info">共 <span id="totalRecords">0</span> 条 <select id="perPage" onchange="loadData()"><option value="10">10条/页</option><option value="20" selected>20条/页</option><option value="50">50条/页</option><option value="100">100条/页</option></select></div>
+            </div>
+            <table class="modern-table" id="dataTable"><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+    <div class="modal" id="editModal"><div class="modal-content"><div class="modal-header"><h3><i class="fas fa-edit"></i> 编辑数据</h3><button onclick="closeModal()" class="close-btn"><i class="fas fa-times"></i></button></div><div class="modal-body" id="modalBody"></div><div class="modal-footer"><button onclick="closeModal()" class="btn btn-text">取消</button><button onclick="saveEdit()" class="btn btn-primary">保存</button></div></div></div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        let currentPage=1, currentDataType='weather', selectedIds=new Set(), editingId=null, searchTimer=null;
+        const headers={weather:['','ID','城市','日期','白天天气','夜间天气','最高温','最低温','白天风向','夜间风向','操作'], aqi:['','ID','城市','日期','质量等级','AQI指数','排名','PM2.5','PM10','SO₂','NO₂','CO','O₃','操作']};
+        function switchDataType(){ currentDataType=document.getElementById('dataType').value; currentPage=1; selectedIds.clear(); updateSelectedUI(); loadData(); }
+        function debounceSearch(){ clearTimeout(searchTimer); searchTimer=setTimeout(()=>{ currentPage=1; loadData(); },300); }
+        async function loadData(){
+            const search=document.getElementById('searchInput').value, city=document.getElementById('cityFilter').value, start=document.getElementById('startDate').value, end=document.getElementById('endDate').value, per=document.getElementById('perPage').value;
+            const endpoint=currentDataType==='weather'?'/api/weather_data':'/api/aqi_data';
+            const params=new URLSearchParams({page:currentPage,per_page:per,search,city,start_date:start,end_date:end});
+            try{
+                const res=await fetch(`${endpoint}?${params}`), data=await res.json();
+                if(data.success){ renderTable(data.data); renderPagination(data.total_pages,data.total); updateCityFilter(data.cities); document.getElementById('totalRecords').textContent=data.total; }
+            }catch(e){ showToast('加载失败','error'); }
+        }
+        function renderTable(data){
+            const thead=document.getElementById('tableHead'), tbody=document.getElementById('tableBody');
+            thead.innerHTML='<tr>'+headers[currentDataType].map(h=>`<th>${h}</th>`).join('')+'</tr>';
+            if(data.length===0){ tbody.innerHTML=`<tr><td colspan="${headers[currentDataType].length}" class="empty-cell"><i class="fas fa-inbox"></i> 暂无数据</td></tr>`; return; }
+            tbody.innerHTML=data.map(row=>{ const checked=selectedIds.has(row.id); if(currentDataType==='weather') return `<tr data-id="${row.id}"><td><input type="checkbox" ${checked?'checked':''} onchange="toggleSelect(${row.id})"></td><td>${row.id}</td><td>${row.city_name}</td><td>${row.date}</td><td>${row.day_weather_condition||'-'}</td><td>${row.night_weather_condition||'-'}</td><td class="number-cell">${row.max_temperature!==null?row.max_temperature+'°C':'-'}</td><td class="number-cell">${row.min_temperature!==null?row.min_temperature+'°C':'-'}</td><td>${row.day_wind_direction||'-'}</td><td>${row.night_wind_direction||'-'}</td><td class="actions"><button onclick="editRow(${row.id})" class="btn-icon"><i class="fas fa-edit"></i></button><button onclick="deleteRow(${row.id})" class="btn-icon danger"><i class="fas fa-trash"></i></button></td></tr>`;
+                else return `<tr data-id="${row.id}"><td><input type="checkbox" ${checked?'checked':''} onchange="toggleSelect(${row.id})"></td><td>${row.id}</td><td>${row.city_name}</td><td>${row.date}</td><td><span class="badge ${getAqiClass(row.aqi_quality_grade)}">${row.aqi_quality_grade}</span></td><td class="number-cell">${row.aqi_index}</td><td class="number-cell">${row.aqi_ranking_day||'-'}</td><td class="number-cell">${row.PM25||'-'}</td><td class="number-cell">${row.PM10||'-'}</td><td class="number-cell">${row.So2||'-'}</td><td class="number-cell">${row.No2||'-'}</td><td class="number-cell">${row.Co||'-'}</td><td class="number-cell">${row.O3||'-'}</td><td class="actions"><button onclick="editRow(${row.id})" class="btn-icon"><i class="fas fa-edit"></i></button><button onclick="deleteRow(${row.id})" class="btn-icon danger"><i class="fas fa-trash"></i></button></td></tr>`;
+            }).join('');
+        }
+        function getAqiClass(grade){ const map={'优':'good','良':'moderate','轻度污染':'unhealthy-sensitive','中度污染':'unhealthy','重度污染':'very-unhealthy','严重污染':'hazardous'}; return map[grade]||''; }
+        function renderPagination(totalPages,total){ let html=''; if(totalPages<=1){ document.getElementById('pagination').innerHTML=''; return; } html+=`<button ${currentPage===1?'disabled':''} onclick="goPage(${currentPage-1})"><i class="fas fa-chevron-left"></i></button>`; for(let i=1;i<=totalPages;i++){ if(i===1||i===totalPages||(i>=currentPage-2&&i<=currentPage+2)) html+=`<button class="${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`; else if(i===currentPage-3||i===currentPage+3) html+=`<span class="ellipsis">...</span>`; } html+=`<button ${currentPage===totalPages?'disabled':''} onclick="goPage(${currentPage+1})"><i class="fas fa-chevron-right"></i></button>`; document.getElementById('pagination').innerHTML=html; }
+        function goPage(p){ currentPage=p; loadData(); }
+        function updateCityFilter(cities){ const sel=document.getElementById('cityFilter'), cur=sel.value; sel.innerHTML='<option value="">全部城市</option>'+cities.map(c=>`<option value="${c}" ${c===cur?'selected':''}>${c}</option>`).join(''); }
+        function resetFilters(){ document.getElementById('searchInput').value=''; document.getElementById('cityFilter').value=''; document.getElementById('startDate').value=''; document.getElementById('endDate').value=''; currentPage=1; loadData(); }
+        function toggleSelectAll(){ const checked=document.getElementById('selectAll').checked; document.querySelectorAll('#dataTable tbody input[type="checkbox"]').forEach(cb=>{ const id=parseInt(cb.closest('tr').dataset.id); cb.checked=checked; checked?selectedIds.add(id):selectedIds.delete(id); }); updateSelectedUI(); }
+        function toggleSelect(id){ selectedIds.has(id)?selectedIds.delete(id):selectedIds.add(id); updateSelectedUI(); }
+        function updateSelectedUI(){ const cnt=selectedIds.size; document.getElementById('selectedCount').textContent=cnt>0?`已选 ${cnt} 条`:''; document.getElementById('batchDeleteBtn').disabled=cnt===0; }
+        function editRow(id){ editingId=id; const row=document.querySelector(`tr[data-id="${id}"]`), cells=row.querySelectorAll('td'); let fields=[]; if(currentDataType==='weather'){ fields=[{name:'city_name',label:'城市',value:cells[2].textContent,type:'text'},{name:'date',label:'日期',value:cells[3].textContent,type:'date'},{name:'day_weather_condition',label:'白天天气',value:cells[4].textContent==='-'?'':cells[4].textContent,type:'text'},{name:'night_weather_condition',label:'夜间天气',value:cells[5].textContent==='-'?'':cells[5].textContent,type:'text'},{name:'max_temperature',label:'最高温',value:cells[6].textContent.replace('°C','').replace('-',''),type:'number'},{name:'min_temperature',label:'最低温',value:cells[7].textContent.replace('°C','').replace('-',''),type:'number'},{name:'day_wind_direction',label:'白天风向',value:cells[8].textContent==='-'?'':cells[8].textContent,type:'text'},{name:'night_wind_direction',label:'夜间风向',value:cells[9].textContent==='-'?'':cells[9].textContent,type:'text'}]; }
+            else{ fields=[{name:'city_name',label:'城市',value:cells[2].textContent,type:'text'},{name:'date',label:'日期',value:cells[3].textContent,type:'date'},{name:'aqi_quality_grade',label:'质量等级',value:cells[4].textContent,type:'text'},{name:'aqi_index',label:'AQI指数',value:cells[5].textContent,type:'number'},{name:'PM25',label:'PM2.5',value:cells[7].textContent==='-'?'':cells[7].textContent,type:'number'},{name:'PM10',label:'PM10',value:cells[8].textContent==='-'?'':cells[8].textContent,type:'number'},{name:'So2',label:'SO₂',value:cells[9].textContent==='-'?'':cells[9].textContent,type:'number'},{name:'No2',label:'NO₂',value:cells[10].textContent==='-'?'':cells[10].textContent,type:'number'},{name:'Co',label:'CO',value:cells[11].textContent==='-'?'':cells[11].textContent,type:'number'},{name:'O3',label:'O₃',value:cells[12].textContent==='-'?'':cells[12].textContent,type:'number'}]; }
+            document.getElementById('modalBody').innerHTML=fields.map(f=>`<div class="form-group"><label>${f.label}</label><input type="${f.type}" name="${f.name}" value="${f.value}" class="form-input"></div>`).join('');
+            document.getElementById('editModal').classList.add('show');
+        }
+        function closeModal(){ document.getElementById('editModal').classList.remove('show'); editingId=null; }
+        async function saveEdit(){ if(!editingId) return; const data={}; document.querySelectorAll('#modalBody input').forEach(inp=>{ data[inp.name]=inp.type==='number'&&inp.value?parseFloat(inp.value):inp.value; }); const endpoint=currentDataType==='weather'?`/api/weather/${editingId}`:`/api/aqi/${editingId}`; try{ const res=await fetch(endpoint,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}), result=await res.json(); if(result.success){ showToast('保存成功','success'); closeModal(); loadData(); }else showToast(result.error||'保存失败','error'); }catch(e){ showToast('保存失败','error'); } }
+        async function deleteRow(id){ if(!confirm('确定删除吗？')) return; const endpoint=currentDataType==='weather'?`/api/weather/${id}`:`/api/aqi/${id}`; try{ const res=await fetch(endpoint,{method:'DELETE'}), result=await res.json(); if(result.success){ showToast('删除成功','success'); loadData(); } }catch(e){ showToast('删除失败','error'); } }
+        async function batchDelete(){ if(!confirm(`确定删除选中的 ${selectedIds.size} 条数据吗？`)) return; try{ const res=await fetch('/api/batch_delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({table:currentDataType==='weather'?'history_weather':'history_aqi',ids:Array.from(selectedIds)})}), result=await res.json(); if(result.success){ showToast(`成功删除 ${result.deleted} 条数据`,'success'); selectedIds.clear(); updateSelectedUI(); loadData(); } }catch(e){ showToast('批量删除失败','error'); } }
+        function initDB(){ fetch('/api/init_db').then(r=>r.json()).then(d=>showToast(d.success?'初始化成功':'初始化失败',d.success?'success':'error')); }
+        function clearDB(){ if(!confirm('⚠️ 确认清空所有数据？不可恢复！')) return; fetch('/api/clear_db').then(r=>r.json()).then(d=>{ showToast('已清空','success'); loadData(); }); }
+        function crawlData(){ showToast('⏳ 爬虫已启动，请前往实时监控页面查看进度','info'); fetch('/api/crawl').then(r=>r.json()); }
+        function exportData(){ fetch('/api/export').then(r=>r.json()).then(d=>showToast('导出成功','success')); }
+        function showToast(msg,type){ const container=document.getElementById('toastContainer'), toast=document.createElement('div'); toast.className=`toast ${type}`; toast.innerHTML=`<i class="fas fa-${type==='success'?'check-circle':type==='error'?'exclamation-circle':'info-circle'}"></i> ${msg}`; container.appendChild(toast); setTimeout(()=>{ toast.classList.add('hide'); setTimeout(()=>toast.remove(),300); },3000); }
+        loadData();
+    </script>
+</body>
+</html>
